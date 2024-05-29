@@ -77,8 +77,9 @@ while IFS= read -r line; do
 
 		if [[ "$operation" != *"Delete"* ]] && [[ "$old_value" != "" ]] && [[ "$new_value" != "" ]]; then
 			echo "$old_value" > old_value_tmp.txt
+			new_value=$(echo $new_value | sed 's/\[.*" {/\[{/' | sed 's/}[[:space:]]{/},{/')
 			echo "$new_value" > new_value_tmp.txt
-			getdiff=$(diff -y old_value_tmp.txt new_value_tmp.txt)
+			getdiff=$(diff -y <(jq --sort-keys . old_value_tmp.txt) <(jq --sort-keys . new_value_tmp.txt))
 		fi
 
 
@@ -89,8 +90,8 @@ while IFS= read -r line; do
 		printf "Operation Status: $operation_status \n"
 		printf "Old Value: $old_value \n"
 		printf "New Value: $new_value \n\n\n"
-#		echo "Diff: $getdiff"
-#		printf "\n\n\n"
+		printf "Diff: $getdiff"
+		printf "\n\n\n"
 
 
 	fi
