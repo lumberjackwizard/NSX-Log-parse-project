@@ -66,7 +66,7 @@ done < change_logs.txt  > new_change_logs.txt
 # Now that logs are sorted and ready, create output that is easier to read:
 
 while IFS= read -r line; do
-	if [[ "$line" != ""]]; then
+	if [[ "$line" != "" ]]; then
 		logdate=$(echo "$line" | grep -hoE "\d{4}\-\d{1,2}\-\d{1,2}.*? ")
 		username=$(echo "$line" | grep -hoE "UserName=\"\w*\""  | cut -d "\"" -f2)
 		modulename=$(echo "$line" | grep -hoE "ModuleName=\"\w*\"" | cut -d "\"" -f2)
