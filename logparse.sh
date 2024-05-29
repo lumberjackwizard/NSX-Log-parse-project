@@ -63,4 +63,24 @@ while IFS= read -r line; do
 	printf "\n\n\n"
 done < change_logs.txt  > new_change_logs.txt
 
+# Now that logs are sorted and ready, create output that is easier to read:
 
+while IFS= read -r line; do
+	logdate=$(echo "$line" | grep -hoE "\d{4}\-\d{1,2}\-\d{1,2}.*? ")
+	username=$(echo "$line" | grep -hoE "UserName=\"\w*\""  | cut -d "\"" -f2)
+	modulename=$(echo "$line" | grep -hoE "ModuleName=\"\w*\"" | cut -d "\"" -f2)
+	operation=$(echo "$line" | grep -hoE "Operation=\"\w*\"" | cut -d "\"" -f2)
+	operation_status=$(echo "$line" | grep -hoE "Operation status=\"\w*\""  | cut -d "\"" -f2)
+	old_value=$(echo "$line" | grep -hoE "Old value=.*New value" | sed  's/, New value//')
+    new_value=$(echo "$line" | grep -hoE "New value=.*")
+
+	printf "Date: $logdate \n"
+	printf "UserName: $username \n"
+	printf "ModuleName: $modulename \n"
+	printf "Operation: $operation \n"
+	printf "Operation Status: $operation_status \n"
+	printf "Old Value: $old_value \n"
+	printf "New Value: $new_value \n\n\n"
+
+
+done < new_change_logs.txt > Pretty_logs.txt
