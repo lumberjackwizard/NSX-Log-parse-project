@@ -89,8 +89,8 @@ while IFS= read -r line; do
 		printf "Operation: $operation \n"
 		printf "Operation Status: $operation_status \n"
 		printf "Old Value: $old_value \n"
-		printf "New Value: $new_value \n\n\n"
-		printf "Diff: $getdiff"
+		printf "New Value: $new_value \n\n"
+		printf "Diff: \n$getdiff"
 		printf "\n\n\n"
 
 		getdiff=""
