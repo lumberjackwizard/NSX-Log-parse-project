@@ -72,8 +72,8 @@ while IFS= read -r line; do
 		modulename=$(echo "$line" | grep -hoE "ModuleName=\"\w*\"" | cut -d "\"" -f2)
 		operation=$(echo "$line" | grep -hoE "Operation=\"\w*\"" | cut -d "\"" -f2)
 		operation_status=$(echo "$line" | grep -hoE "Operation status=\"\w*\""  | cut -d "\"" -f2)
-		old_value=$(echo "$line" | grep -hoE "Old value=.*New value" | sed  's/, New value//')
-		new_value=$(echo "$line" | grep -hoE "New value=.*")
+		old_value=$(echo "$line" | grep -hoE "Old value=.*New value" |  sed 's/Old value=//' | sed  's/, New value//')
+		new_value=$(echo "$line" | grep -hoE "New value=.*" | sed 's/New value=//')
 
 
 		printf "Date: $logdate \n"
