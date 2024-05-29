@@ -93,6 +93,9 @@ while IFS= read -r line; do
 		printf "Diff: $getdiff"
 		printf "\n\n\n"
 
+		getdiff=""
+		
+
 
 	fi
 
