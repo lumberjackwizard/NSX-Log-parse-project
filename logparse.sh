@@ -21,21 +21,8 @@ while IFS= read -r line; do
 	grep -hE $line $LOGS/nsx-audit.log*
 done < splitid.txt > fullsplitid.txt 
 
-#test code to see if i can mux the split entries together without messing with the stuff above
-#note - this works - data is output to catsplitid.txt 
-# commenting everything out below to work on the test case noted in the next section
-
-#while IFS= read -r line; do
-#	splittest=""
-#        while IPS= read -r newline; do
-#		if [[ "$newline" == *"$line"* ]]; then
-#			splittest=$splittest$newline
-#                fi
-#        done < fullsplitid.txt
-#        printf "$splittest\n\n\n"
-
-# testing editing out some header data on split files to make them appear correctly
-# note - this works
+# editing out some header data on split files to make them appear correctly, and then
+# joining all split pieces into a single entry
 
 while IFS= read -r line; do
         splittest=""
@@ -49,7 +36,8 @@ while IFS= read -r line; do
 			fi
                 fi
         done < fullsplitid.txt
-#        printf "$splittest\n\n\n"
+# using echo and printf seperately as printf alone formats the output of things like certificate data
+# in a way that makes it harder to format the data later. 
 	echo "$splittest"
 	printf "\n\n\n"
 done < splitid.txt > catsplitid.txt
@@ -69,7 +57,8 @@ while IFS= read -r line; do
 		newlogentry=$line
 	fi
 
-#        printf "$newlogentry\n\n\n"
+# using echo and printf seperately as printf alone formats the output of things like certificate data
+# in a way that makes it harder to format the data later. 
 	echo "$newlogentry"
 	printf "\n\n\n"
 done < change_logs.txt  > new_change_logs.txt
