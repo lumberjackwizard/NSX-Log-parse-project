@@ -76,7 +76,7 @@ while IFS= read -r line; do
 		new_value=$(echo "$line" | grep -hoE "New value=.*" | sed 's/New value=//')
 
 		if [[ "$operation" == *"Delete"* ]] && [[ "$old_value" != "" ]] && [[ "$new_value" != "" ]]; then
-			getdiff=$(diff -y "$old_value" "$new_value")
+			getdiff=$(diff -y <(echo "$old_value") <(echo "$new_value"))
 		fi
 
 
