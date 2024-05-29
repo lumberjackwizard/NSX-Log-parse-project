@@ -75,6 +75,10 @@ while IFS= read -r line; do
 		old_value=$(echo "$line" | grep -hoE "Old value=.*New value" |  sed 's/Old value=//' | sed  's/, New value//')
 		new_value=$(echo "$line" | grep -hoE "New value=.*" | sed 's/New value=//')
 
+		if [[ "$operation" == *"Delete"* ]] && [[ "$old_value" != "" ]] && [[ "$new_value" != "" ]]; then
+			getdiff=$(diff -y "$old_value" "$new_value")
+		fi
+
 
 		printf "Date: $logdate \n"
 		printf "UserName: $username \n"
@@ -83,6 +87,8 @@ while IFS= read -r line; do
 		printf "Operation Status: $operation_status \n"
 		printf "Old Value: $old_value \n"
 		printf "New Value: $new_value \n\n\n"
+		printf "Diff: $getdiff \n\n\n"
+
 
 	fi
 
