@@ -79,7 +79,7 @@ while IFS= read -r line; do
 			echo "$old_value" > old_value_tmp.txt
 			new_value=$(echo $new_value | sed 's/\[.*" {/\[{/' | sed 's/}[[:space:]]{/},{/')
 			echo "$new_value" > new_value_tmp.txt
-			getdiff=$(diff -y <(jq --sort-keys . old_value_tmp.txt) <(jq --sort-keys . new_value_tmp.txt))
+			getdiff=$(diff -y --suppress-common-lines <(jq --sort-keys . old_value_tmp.txt) <(jq --sort-keys . new_value_tmp.txt))
 		fi
 
 
@@ -94,7 +94,7 @@ while IFS= read -r line; do
 		printf "\n\n\n"
 
 		getdiff=""
-		
+
 
 
 	fi
