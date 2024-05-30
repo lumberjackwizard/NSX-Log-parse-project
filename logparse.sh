@@ -75,12 +75,34 @@ while IFS= read -r line; do
 		old_value=$(echo "$line" | grep -hoE "Old value=.*New value" |  sed 's/Old value=//' | sed  's/, New value//')
 		new_value=$(echo "$line" | grep -hoE "New value=.*" | sed 's/New value=//')
 
-		# if [[ "$operation" != *"Delete"* ]] && [[ "$old_value" != "" ]] && [[ "$new_value" != "" ]]; then
-		# 	echo "$old_value" > old_value_tmp.txt
-		# 	new_value=$(echo $new_value | sed 's/\[.*" {/\[{/' | sed 's/}[[:space:]]{/},{/')
-		# 	echo "$new_value" > new_value_tmp.txt
-		# 	getdiff=$(diff -y --suppress-common-lines <(jq --sort-keys . old_value_tmp.txt) <(jq --sort-keys . new_value_tmp.txt))
-		# fi
+		
+
+		if [[ "$operation" != *"Delete"* ]] && [[ "$old_value" != "" ]] && [[ "$new_value" != "" ]]; then
+			#echo "$old_value" > old_value_tmp.txt
+
+			#split old value data to get json formatted info only
+			read -ra array <<< "$old_value"
+			for element in "${array[@]}"; do
+				if [[ "$element" == [{*_create_time*}* ]]; then
+					element=$(echo "$element" | cut -d "[" -f2-)
+				elif [[ "$element" == {*_create_time*}] ]]; then
+					element=$(echo "$element" | cut -d "[" -f1)
+				
+					#old_value_tmp=$old_value_tmp$element
+					if [[ $old_value_tmp == "" ]]; then
+						old_value_tmp=$element
+					else	
+						old_value_tmp=$old_value_tmp","$element
+					fi
+				fi
+			done
+			$old_value_tmp
+			old_value_tmp=$(jq -r . <<< "$old_value_tmp")
+			#new_value=$(echo $new_value | sed 's/\[.*" {/\[{/' | sed 's/}[[:space:]]{/},{/')
+			echo "$new_value_tmp" > new_value_tmp.txt
+		#getdiff=$(diff -y --suppress-common-lines <(jq --sort-keys . old_value_tmp.txt) <(jq --sort-keys . new_value_tmp.txt))
+
+		fi
 
 
 		printf "Date: $logdate \n"
@@ -89,11 +111,15 @@ while IFS= read -r line; do
 		printf "Operation: $operation \n"
 		printf "Operation Status: $operation_status \n"
 		printf "Old Value: $old_value \n"
-		printf "New Value: $new_value \n\n"
+		printf "New Value: $new_value \n"
+		printf "Pretty Old Value: $old_value_tmp \n"
+		
 		printf "Diff: \n$getdiff"
 		printf "\n\n\n"
 
 		getdiff=""
+		old_value_tmp=""
+		new_value_tmp=""
 
 
 
