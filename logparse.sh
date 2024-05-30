@@ -86,7 +86,8 @@ while IFS= read -r line; do
 		printf "Old Value: $old_value \n\n"
 		printf "New Value: $new_value \n\n"
 	#	printf "Pretty Old: $pretty_old \n"
-		printf "Diff: $diff_data \n"
+		printf "Diff: ${diff_data[@]} \n"
+
 
 		printf "\n\n\n"
 
