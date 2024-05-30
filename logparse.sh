@@ -74,8 +74,12 @@ while IFS= read -r line; do
 		operation_status=$(echo "$line" | grep -hoE "Operation status=\"\w*\""  | cut -d "\"" -f2)
 		old_value=$(echo "$line" | grep -hoE "Old value=.*New value" |  sed 's/Old value=//' | sed  's/, New value//')
 		new_value=$(echo "$line" | grep -hoE "New value=.*" | sed 's/New value=//')
-		#pretty_old=$(echo "$old_value" | jq )
-		diff_data=$(diff <(echo "$old_value") <(echo "$new_value"))
+
+
+		pretty_old=$(echo "$old_value" | sed 's/}{/},{/' )
+		#diff_data=$(diff <(echo "$old_value") <(echo "$new_value"))
+
+
 
 
 		printf "Date: $logdate \n"
@@ -85,8 +89,8 @@ while IFS= read -r line; do
 		printf "Operation Status: $operation_status \n\n"
 		printf "Old Value: $old_value \n\n"
 		printf "New Value: $new_value \n\n"
-	#	printf "Pretty Old: $pretty_old \n"
-		printf "Diff: ${diff_data[@]} \n"
+		printf "Pretty Old: $pretty_old \n"
+	#	printf "Diff: ${diff_data[@]} \n"
 
 
 		printf "\n\n\n"
