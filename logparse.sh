@@ -75,12 +75,21 @@ while IFS= read -r line; do
 		old_value=$(echo "$line" | grep -hoE "Old value=.*New value" |  sed 's/Old value=//' | sed  's/, New value//')
 		new_value=$(echo "$line" | grep -hoE "New value=.*" | sed 's/New value=//')
 
-
+		# "big" changes appear to shove multiple entries into one log file. Inserting a comma between each entry so 
+		# jq can break them down and display in json format. 
 		pretty_old=$(echo "$old_value" | sed 's/}{/},{/g' )
 		pretty_old=$(echo "$pretty_old" | jq )
 
+		# all examples of new data have additional fields that the old data never does. Working to remove those from evaluation
+		# or at least,  include them in a jq evaluation
+
 		pretty_new=$(echo "$new_value" | sed 's/}{/},{/g' )
-		pretty_new=$(echo "$pretty_new" | jq )
+		read -ra pretty_new_array <<< "$pretty_new"
+
+		echo ${pretty_new_array[0]}
+
+
+		#pretty_new=$(echo "$pretty_new" | jq )
 		#diff_data=$(diff <(echo "$old_value") <(echo "$new_value"))
 
 
