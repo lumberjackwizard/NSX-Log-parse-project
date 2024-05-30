@@ -85,6 +85,12 @@ while IFS= read -r line; do
 
 		pretty_new=$(echo "$new_value" | sed 's/}{/},{/g' )
 		read -ra pretty_new_array <<< "$pretty_new"
+		array_len=${pretty_new_array[@]}
+		
+		for (( i=0; i < ($array_len - 1) i++)); do
+			${pretty_new_array[$i]}=$(echo ${pretty_new_array[$i]} | sed's/["/[ {"' )
+		fi
+
 
 		echo ${pretty_new_array[0]}
 
