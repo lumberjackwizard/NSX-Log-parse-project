@@ -75,7 +75,7 @@ while IFS= read -r line; do
 		old_value=$(echo "$line" | grep -hoE "Old value=.*New value" |  sed 's/Old value=//' | sed  's/, New value//')
 		new_value=$(echo "$line" | grep -hoE "New value=.*" | sed 's/New value=//')
 		#pretty_old=$(echo "$old_value" | jq )
-		diff_data=$(diff <("$old_value") <("$new_value"))
+		diff_data=$(diff <(echo "$old_value") <(echo "$new_value"))
 
 
 		printf "Date: $logdate \n"
