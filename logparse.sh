@@ -77,6 +77,7 @@ while IFS= read -r line; do
 
 
 		pretty_old=$(echo "$old_value" | sed 's/}{/},{/' )
+		$pretty_old
 		pretty_old=$(echo "$pretty_old" | jq )
 		#diff_data=$(diff <(echo "$old_value") <(echo "$new_value"))
 
