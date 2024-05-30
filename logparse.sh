@@ -90,7 +90,7 @@ while IFS= read -r line; do
 
 		printf "\n\n\n"
 
-
+		diff_data=""
 
 
 	fi
