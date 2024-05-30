@@ -77,8 +77,10 @@ while IFS= read -r line; do
 
 
 		pretty_old=$(echo "$old_value" | sed 's/}{/},{/g' )
-		echo $pretty_old
 		pretty_old=$(echo "$pretty_old" | jq )
+
+		pretty_new=$(echo "$new_value" | sed 's/}{/},{/g' )
+		pretty_new=$(echo "$pretty_new" | jq )
 		#diff_data=$(diff <(echo "$old_value") <(echo "$new_value"))
 
 
@@ -91,7 +93,8 @@ while IFS= read -r line; do
 		printf "Operation Status: $operation_status \n\n"
 		printf "Old Value: $old_value \n\n"
 		printf "New Value: $new_value \n\n"
-		printf "Pretty Old: $pretty_old \n"
+		printf "Pretty Old: $pretty_old \n\n"
+		printf "Pretty New: $pretty_new \n\n"
 	#	printf "Diff: ${diff_data[@]} \n"
 
 
