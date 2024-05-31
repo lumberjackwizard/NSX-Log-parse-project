@@ -1,4 +1,4 @@
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-13T15:17:08.555Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -16,7 +16,7 @@ Pretty New: ["tier-0" "test" {"communities":["500:300"],"id":"test","display_nam
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-13T15:24:54.302Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -34,7 +34,7 @@ Pretty New: ["tier-0" "default" "edge01-60" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-13T15:24:54.612Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -52,7 +52,7 @@ Pretty New: ["tier-0" "default" "edge01-70" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-13T15:24:54.646Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -70,7 +70,7 @@ Pretty New: ["tier-0" "default" "edge02-60" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-13T15:24:54.691Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -88,7 +88,7 @@ Pretty New: ["tier-0" "default" "edge2-70" {"override":false}]
 
 
 
-["static-T1"
+[ {"static-T1"
 Date: 2024-05-13T17:34:59.890Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -146,7 +146,7 @@ Pretty New: ["static-T1" {"tier0_path":"/infra/tier-0s/tier-0","failover_mode":"
 
 
 
-["static-T1"
+[ {"static-T1"
 Date: 2024-05-13T17:34:59.910Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -262,7 +262,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["static-T1"
+[ {"static-T1"
 Date: 2024-05-13T17:37:26.287Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -309,7 +309,7 @@ Pretty New: ["static-T1" "c70c3c1d-3729-4987-9f29-207ccfdbe2a9"]
 
 
 
-["test-vs"
+[ {"test-vs"
 Date: 2024-05-13T19:33:18.040Z  
 UserName: admin 
 ModuleName: PolicyLoadBalancer 
@@ -457,7 +457,7 @@ Pretty New: ["test-vs" {"force":false}]
 
 
 
-["test"
+[ {"test"
 Date: 2024-05-13T19:33:39.722Z  
 UserName: admin 
 ModuleName: PolicyLoadBalancer 
@@ -513,7 +513,7 @@ Pretty New: ["test" {"force":false}]
 
 
 
-["test-lb"
+[ {"test-lb"
 Date: 2024-05-13T19:33:50.791Z  
 UserName: admin 
 ModuleName: PolicyLoadBalancer 
@@ -557,7 +557,7 @@ Pretty New: ["test-lb" {"force":false}]
 
 
 
-["static-T1"
+[ {"static-T1"
 Date: 2024-05-13T19:34:30.925Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -616,7 +616,7 @@ Pretty New: ["static-T1" {"failover_mode":"NON_PREEMPTIVE","enable_standby_reloc
 
 
 
-["static-T1"
+[ {"static-T1"
 Date: 2024-05-13T19:34:30.930Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -734,7 +734,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["default"
+[ {"default"
 Date: 2024-05-13T19:45:35.633Z  
 UserName: admin 
 ModuleName: PolicyHostTransportNode 
@@ -752,7 +752,7 @@ Pretty New: ["default" "default" "a24113d9-2497-4123-ae2e-1701b5fe58b0"]
 
 
 
-["default"
+[ {"default"
 Date: 2024-05-13T19:48:18.726Z  
 UserName: admin 
 ModuleName: PolicyHostTransportNode 
@@ -770,7 +770,7 @@ Pretty New: ["default" "default" "a24113d9-2497-4123-ae2e-1701b5fe58b0"]
 
 
 
-["default"
+[ {"default"
 Date: 2024-05-13T19:54:51.176Z  
 UserName: admin 
 ModuleName: PolicyHostTransportNode 
@@ -788,7 +788,7 @@ Pretty New: ["default" "default" "a24113d9-2497-4123-ae2e-1701b5fe58b0"]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:50:11.564Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -806,7 +806,7 @@ Pretty New: ["tier-0" "default" "edge01-60" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:50:11.713Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -824,7 +824,7 @@ Pretty New: ["tier-0" "default" "edge01-70" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:50:11.732Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -842,7 +842,7 @@ Pretty New: ["tier-0" "default" "edge02-60" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:50:11.750Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -860,7 +860,7 @@ Pretty New: ["tier-0" "default" "edge2-70" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:50:45.109Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -906,7 +906,7 @@ Pretty New: ["tier-0" "vyos-left"]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:51:00.181Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -961,7 +961,7 @@ Pretty New: ["tier-0" "default" "edge01-60" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:51:00.208Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -979,7 +979,7 @@ Pretty New: ["tier-0" "default" "edge01-70" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:51:00.363Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1034,7 +1034,7 @@ Pretty New: ["tier-0" "default" "edge02-60" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:51:00.380Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1052,7 +1052,7 @@ Pretty New: ["tier-0" "default" "edge2-70" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:52:31.823Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1070,7 +1070,7 @@ Pretty New: ["tier-0" "default" "edge2-70" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:53:00.065Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1182,7 +1182,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:53:19.174Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1200,7 +1200,7 @@ Pretty New: ["tier-0" "default" "edge01-70" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:53:19.335Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1218,7 +1218,7 @@ Pretty New: ["tier-0" "default" "edge2-70" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:54:59.029Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1260,7 +1260,7 @@ Pretty New: ["tier-0" "test"]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:55:20.727Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1319,7 +1319,7 @@ Pretty New: ["tier-0" "filter-default-out"]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:56:13.257Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1337,7 +1337,7 @@ Pretty New: ["tier-0" "default" "edge2-70" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:56:38.218Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1445,7 +1445,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:56:50.910Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1463,7 +1463,7 @@ Pretty New: ["tier-0" "default" "edge2-70" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:57:10.637Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1525,7 +1525,7 @@ Pretty New: ["tier-0" "default" "3d3be44c-5509-4412-b59f-d2de20d553b3" {"overrid
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:57:24.023Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1580,7 +1580,7 @@ Pretty New: ["tier-0" "default" "edge01-70" {"override":false}]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:57:24.044Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1635,7 +1635,7 @@ Pretty New: ["tier-0" "default" "edge2-70" {"override":false}]
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T14:57:54.552Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1653,7 +1653,7 @@ Pretty New: ["tier0" {"ha_mode":"ACTIVE_STANDBY","failover_mode":"NON_PREEMPTIVE
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T14:57:54.581Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1671,7 +1671,7 @@ Pretty New: ["tier0" "labLocaleServices" {"route_redistribution_config":{"bgp_en
 
 
 
-["Tier1"
+[ {"Tier1"
 Date: 2024-05-14T14:57:54.623Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1733,7 +1733,7 @@ Pretty New: ["Tier1" {"tier0_path":"/infra/tier-0s/tier0","failover_mode":"NON_P
 
 
 
-["vlan60"
+[ {"vlan60"
 Date: 2024-05-14T14:57:54.702Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1795,7 +1795,7 @@ Pretty New: ["vlan60" {"vlan_ids":["60"],"transport_zone_path":"/infra/sites/def
 
 
 
-["vlan70"
+[ {"vlan70"
 Date: 2024-05-14T14:57:54.707Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1857,7 +1857,7 @@ Pretty New: ["vlan70" {"vlan_ids":["70"],"transport_zone_path":"/infra/sites/def
 
 
 
-["Web_Segment"
+[ {"Web_Segment"
 Date: 2024-05-14T14:57:54.733Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -1967,7 +1967,7 @@ Pretty New: ["Web_Segment" {"type":"ROUTED","subnets":[{"gateway_address":"172.2
 
 
 
-["App_Segment"
+[ {"App_Segment"
 Date: 2024-05-14T14:57:54.740Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -2077,7 +2077,7 @@ Pretty New: ["App_Segment" {"type":"ROUTED","subnets":[{"gateway_address":"172.2
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T14:57:54.767Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -2187,7 +2187,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge01-vlan60-new" {"mtu":1500,"urpf_m
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T14:57:54.777Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -2297,7 +2297,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge01-vlan70-new" {"mtu":1500,"urpf_m
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T14:57:54.787Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -2407,7 +2407,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge02-vlan60-new" {"mtu":1500,"urpf_m
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T14:57:54.796Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -2517,7 +2517,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge02-vlan70-new" {"mtu":1500,"urpf_m
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T14:57:54.802Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -2627,7 +2627,7 @@ Pretty New: ["tier0" "defaultstaticroute" {"network":"0.0.0.0/0","next_hops":[{"
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T14:57:54.810Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -2771,7 +2771,7 @@ Pretty New: ["tier0" "labLocaleServices" {"local_as_num":"100","enabled":true,"e
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T14:57:54.824Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -2915,7 +2915,7 @@ Pretty New: ["tier0" "labLocaleServices" "Neighbor1" {"neighbor_address":"172.16
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T14:57:54.830Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -3203,7 +3203,7 @@ Pretty New: [{"enforce_revision_check":false} {"resource_type":"Infra","children
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:58:33.317Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -3265,7 +3265,7 @@ Pretty New: ["tier-0" "default" "9cdee125-840a-44cc-9709-6b19fa3ca9ad"]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:58:33.326Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -3354,7 +3354,7 @@ Pretty New: ["tier-0" "prefixlist-out-default"]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:58:33.328Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -3469,7 +3469,7 @@ Pretty New: ["tier-0" "default-deny"]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:58:33.330Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -3610,7 +3610,7 @@ Pretty New: ["tier-0" "any"]
 
 
 
-["tier-0"
+[ {"tier-0"
 Date: 2024-05-14T14:58:33.363Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -5105,7 +5105,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:35:54.637Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -5157,7 +5157,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge01-vlan60-new" {"override":false}]
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:35:54.656Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -5209,7 +5209,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge01-vlan70-new" {"override":false}]
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:35:54.685Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -5261,7 +5261,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge02-vlan60-new" {"override":false}]
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:35:54.708Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -5313,7 +5313,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge02-vlan70-new" {"override":false}]
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:36:25.161Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -5436,7 +5436,7 @@ Pretty New: ["tier0" {"ha_mode":"ACTIVE_ACTIVE","failover_mode":"NON_PREEMPTIVE"
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:36:25.183Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -5597,7 +5597,7 @@ Pretty New: ["tier0" "labLocaleServices" {"route_redistribution_config":{"bgp_en
 
 
 
-["Tier1"
+[ {"Tier1"
 Date: 2024-05-14T15:36:25.213Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -5798,7 +5798,7 @@ Pretty New: ["Tier1" {"tier0_path":"/infra/tier-0s/tier0","failover_mode":"NON_P
 
 
 
-["vlan60"
+[ {"vlan60"
 Date: 2024-05-14T15:36:25.223Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -5999,7 +5999,7 @@ Pretty New: ["vlan60" {"vlan_ids":["60"],"transport_zone_path":"/infra/sites/def
 
 
 
-["vlan70"
+[ {"vlan70"
 Date: 2024-05-14T15:36:25.229Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -6200,7 +6200,7 @@ Pretty New: ["vlan70" {"vlan_ids":["70"],"transport_zone_path":"/infra/sites/def
 
 
 
-["Web_Segment"
+[ {"Web_Segment"
 Date: 2024-05-14T15:36:25.239Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -6401,7 +6401,7 @@ Pretty New: ["Web_Segment" {"type":"ROUTED","subnets":[{"gateway_address":"172.2
 
 
 
-["App_Segment"
+[ {"App_Segment"
 Date: 2024-05-14T15:36:25.251Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -6641,7 +6641,7 @@ Pretty New: ["App_Segment" {"type":"ROUTED","subnets":[{"gateway_address":"172.2
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:36:25.265Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -6881,7 +6881,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge01-vlan60-new" {"mtu":1500,"urpf_m
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:36:25.277Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -7121,7 +7121,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge01-vlan70-new" {"mtu":1500,"urpf_m
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:36:25.286Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -7361,7 +7361,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge02-vlan60-new" {"mtu":1500,"urpf_m
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:36:25.302Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -7601,7 +7601,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge02-vlan70-new" {"mtu":1500,"urpf_m
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:36:25.313Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -7873,7 +7873,7 @@ Pretty New: ["tier0" "defaultstaticroute" {"network":"0.0.0.0/0","next_hops":[{"
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:36:25.322Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -8145,7 +8145,7 @@ Pretty New: ["tier0" "labLocaleServices" {"local_as_num":"100","enabled":true,"e
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:36:25.332Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -8451,7 +8451,7 @@ Pretty New: ["tier0" "labLocaleServices" "Neighbor1" {"neighbor_address":"172.16
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:36:25.344Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -9131,7 +9131,7 @@ Pretty New: [{"enforce_revision_check":false} {"resource_type":"Infra","children
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:22.772Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -9183,7 +9183,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge01-vlan60-new" {"override":false}]
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:22.797Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -9235,7 +9235,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge01-vlan70-new" {"override":false}]
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:22.823Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -9287,7 +9287,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge02-vlan60-new" {"override":false}]
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:22.851Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -9339,7 +9339,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge02-vlan70-new" {"override":false}]
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:53.140Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -9467,7 +9467,7 @@ Pretty New: ["tier0" {"ha_mode":"ACTIVE_STANDBY","failover_mode":"NON_PREEMPTIVE
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:53.160Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -9633,7 +9633,7 @@ Pretty New: ["tier0" "labLocaleServices" {"route_redistribution_config":{"bgp_en
 
 
 
-["Tier1"
+[ {"Tier1"
 Date: 2024-05-14T15:37:53.169Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -9799,7 +9799,7 @@ Pretty New: ["Tier1" {"tier0_path":"/infra/tier-0s/tier0","failover_mode":"NON_P
 
 
 
-["vlan60"
+[ {"vlan60"
 Date: 2024-05-14T15:37:53.174Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -9965,7 +9965,7 @@ Pretty New: ["vlan60" {"vlan_ids":["60"],"transport_zone_path":"/infra/sites/def
 
 
 
-["vlan70"
+[ {"vlan70"
 Date: 2024-05-14T15:37:53.179Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -10131,7 +10131,7 @@ Pretty New: ["vlan70" {"vlan_ids":["70"],"transport_zone_path":"/infra/sites/def
 
 
 
-["Web_Segment"
+[ {"Web_Segment"
 Date: 2024-05-14T15:37:53.186Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -10297,7 +10297,7 @@ Pretty New: ["Web_Segment" {"type":"ROUTED","subnets":[{"gateway_address":"172.2
 
 
 
-["App_Segment"
+[ {"App_Segment"
 Date: 2024-05-14T15:37:53.193Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -10463,7 +10463,7 @@ Pretty New: ["App_Segment" {"type":"ROUTED","subnets":[{"gateway_address":"172.2
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:53.207Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -10629,7 +10629,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge01-vlan60-new" {"mtu":1500,"urpf_m
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:53.215Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -10795,7 +10795,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge01-vlan70-new" {"mtu":1500,"urpf_m
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:53.224Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -10961,7 +10961,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge02-vlan60-new" {"mtu":1500,"urpf_m
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:53.234Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -11127,7 +11127,7 @@ Pretty New: ["tier0" "labLocaleServices" "edge02-vlan70-new" {"mtu":1500,"urpf_m
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:53.238Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -11325,7 +11325,7 @@ Pretty New: ["tier0" "defaultstaticroute" {"network":"0.0.0.0/0","next_hops":[{"
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:53.245Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -11523,7 +11523,7 @@ Pretty New: ["tier0" "labLocaleServices" {"local_as_num":"100","enabled":true,"e
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:53.260Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -11755,7 +11755,7 @@ Pretty New: ["tier0" "labLocaleServices" "Neighbor1" {"neighbor_address":"172.16
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-14T15:37:53.265Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -12287,7 +12287,7 @@ Pretty New: [{"enforce_revision_check":false} {"resource_type":"Infra","children
 
 
 
-["Tier1"
+[ {"Tier1"
 Date: 2024-05-14T19:43:54.833Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -12334,7 +12334,7 @@ Pretty New: ["Tier1" "0eb17624-bfc2-4350-bbbf-cdfb02a6dfd5"]
 
 
 
-["default"
+[ {"default"
 Date: 2024-05-15T16:17:05.530Z  
 UserName: admin 
 ModuleName: PolicyHostTransportNode 
@@ -12453,7 +12453,7 @@ Pretty New: ["default" "default" "f92d5c8a-dc49-48e6-8da6-40be7d2f422a" {"skip_v
 
 
 
-["default"
+[ {"default"
 Date: 2024-05-15T16:20:23.989Z  
 UserName: admin 
 ModuleName: PolicyHostTransportNode 
@@ -12602,7 +12602,7 @@ Pretty New: [{}]
 
 
 
-["static-T1"
+[ {"static-T1"
 Date: 2024-05-16T14:11:57.153Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -12660,7 +12660,7 @@ Pretty New: ["static-T1" {"tier0_path":"/infra/tier-0s/tier0","failover_mode":"N
 
 
 
-["static-T1"
+[ {"static-T1"
 Date: 2024-05-16T14:11:57.164Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -12776,7 +12776,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["static-T1"
+[ {"static-T1"
 Date: 2024-05-16T14:12:15.454Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -12835,7 +12835,7 @@ Pretty New: ["static-T1" {"tier0_path":"/infra/tier-0s/tier0","failover_mode":"N
 
 
 
-["static-T1"
+[ {"static-T1"
 Date: 2024-05-16T14:12:15.461Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -12953,7 +12953,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-16T14:24:28.359Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -13071,7 +13071,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["testvip"
+[ {"testvip"
 Date: 2024-05-16T15:26:44.348Z  
 UserName: admin 
 ModuleName: PolicyLoadBalancer 
@@ -14009,7 +14009,7 @@ Pretty New: ["63a58c43-3a3c-4282-a3c0-4ee24c2865c5"]
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-17T16:29:14.993Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -14266,7 +14266,7 @@ Pretty New: [{"host_switch_spec":{"host_switches":[{"host_switch_name":"nsxHostS
 
 
 
-["441d43f3-1751-4c0c-91ce-0c3ef8551eb1"
+[ {"441d43f3-1751-4c0c-91ce-0c3ef8551eb1"
 Date: 2024-05-21T14:05:07.899Z  
 UserName: admin 
 ModuleName: TransportNodeLcm 
@@ -14302,7 +14302,7 @@ Pretty New: [{"host_switch_spec":{"host_switches":[{"host_switch_name":"nsxHostS
 
 
 
-["Web_Segment"
+[ {"Web_Segment"
 Date: 2024-05-21T18:51:42.412Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -14416,7 +14416,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["Tier1"
+[ {"Tier1"
 Date: 2024-05-21T19:03:04.936Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -14475,7 +14475,7 @@ Pretty New: ["Tier1" {"tier0_path":"/infra/tier-0s/tier0","failover_mode":"NON_P
 
 
 
-["Tier1"
+[ {"Tier1"
 Date: 2024-05-21T19:03:04.952Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -14593,7 +14593,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-22T16:02:31.175Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -14711,7 +14711,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-22T16:06:00.989Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -14831,7 +14831,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["vlan-test"
+[ {"vlan-test"
 Date: 2024-05-23T16:45:31.126Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -14867,7 +14867,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["static-T1"
+[ {"static-T1"
 Date: 2024-05-23T16:53:22.802Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -14885,7 +14885,7 @@ Pretty New: ["static-T1" "default" "svi-test" {"segment_path":"/infra/segments/v
 
 
 
-["vlan-test"
+[ {"vlan-test"
 Date: 2024-05-23T16:55:04.697Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -15005,7 +15005,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["static-T1"
+[ {"static-T1"
 Date: 2024-05-23T16:59:04.197Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -15066,7 +15066,7 @@ Pretty New: ["static-T1" {"tier0_path":"/infra/tier-0s/tier0","failover_mode":"N
 
 
 
-["static-T1"
+[ {"static-T1"
 Date: 2024-05-23T16:59:04.207Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -15188,7 +15188,7 @@ Pretty New: [{"enforce_revision_check":true} {"resource_type":"Infra","children"
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-23T22:20:47.334Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
@@ -15241,7 +15241,7 @@ Pretty New: ["tier0" "labLocaleServices" "Neighbor2" {"override":false} {"neighb
 
 
 
-["tier0"
+[ {"tier0"
 Date: 2024-05-23T22:20:54.696Z  
 UserName: admin 
 ModuleName: PolicyConnectivity 
