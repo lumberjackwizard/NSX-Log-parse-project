@@ -127,3 +127,10 @@ while IFS= read -r line; do
 
 
 done < new_change_logs.txt > Pretty_logs.txt
+
+# finally, removing all temp files created
+rm -rf change_logs.txt
+rm -rf splitid.txt
+rm -rf fullsplitid.txt
+rm -rf catsplitid.txt
+rm -rf new_change_logs.txt
