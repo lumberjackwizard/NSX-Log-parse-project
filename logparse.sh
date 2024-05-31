@@ -83,26 +83,32 @@ while IFS= read -r line; do
 		# all examples of new data have additional fields that the old data never does. Working to remove those from evaluation
 		# or at least,  include them in a jq evaluation
 
-		#temp adding pretty_new here just to test array
-		pretty_new=$(echo "$new_value")
+		# stripping starting and ending brackets
+		pretty_new=$(echo "$new_value" | sed 's/^\[//' | sed 's/.$//')
 		#pretty_new=$(echo "$new_value" | sed 's/}{/},{/g' )
 		read -ra pretty_new_array <<< "$pretty_new"
 		array_len=${#pretty_new_array[@]}
 
 		skip_last=$((array_len-1))
 
-		#echo "$array_len"
-		appendcurly="}"
-
-		for (( i=0; i < $skip_last; i++)); do
-			pretty_new_array[$i]=$(echo "${pretty_new_array[$i]}" | sed 's/\[\"/\[ {\"/')
-			if [[ ${pretty_new_array[$i]} == \[ { \"* ]]; then
-				pretty_new_array[$i]= ${pretty_new_array[$i]}$appendcurly
+		#now place all array members back into one variable, inserting leading and closing brackets
+		#checking each member of array for lack of curly braces, and adding them if missing
+		pretty_new_final="["
+		for (( i=0; i < $array_len; i++)); do
+			if [[ "${pretty_new_array[$i]}" != "{"*"}" ]]; then
+				pretty_new_array[$i]="{${pretty_new_array[$i]}}"
 			fi
+			#pretty_new_final="$pretty_new_final${pretty_new_array[$i]}"
 		done
+		pretty_new_final=$pretty_new_final${pretty_new_array[@]}
+		pretty_new_final="$pretty_new_final]"
 
+		# for (( i=0; i < $array_len; i++)); do
+		# 	printf "Array member $i: ${pretty_new_array[$i]} \n"
+		# done
 
-		echo ${pretty_new_array[0]}
+		echo "$pretty_new_final"
+		#echo ${pretty_new_array[0]}
 
 
 		#pretty_new=$(echo "$pretty_new" | jq )
