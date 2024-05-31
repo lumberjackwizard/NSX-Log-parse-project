@@ -106,8 +106,8 @@ while IFS= read -r line; do
 		# for (( i=0; i < $array_len; i++)); do
 		# 	printf "Array member $i: ${pretty_new_array[$i]} \n"
 		# done
-
-		echo "$pretty_new_final"
+		pretty_new_final=$(echo "$pretty_new_final" | sed 's/} {/},{/g')
+		#echo "$pretty_new_final"
 		#echo ${pretty_new_array[0]}
 
 
