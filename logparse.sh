@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOGS=/Users/wrightmichae/Downloads/nsx_support_archive_20240526_142427/nsx_manager_1e071042-72dc-a451-5cd7-b3b0b8a36a5f_20240526_142432/var/log
+LOGS=/Users/wrightmichae/Downloads/nsx_support_archive_20240531_210547/nsx_manager_1e071042-72dc-a451-5cd7-b3b0b8a36a5f_20240531_210548/var/log
 
 #grabs all the log entries that match the various operations listed, such as Add, Create, etc)
 change_logs=$(grep -hE "Operation=\"('Add|Create|Delete|Generate|Patch|Remove|Restore|Resync|Update')\w*\"" $LOGS/nsx-audit.log* > change_logs.txt)
@@ -90,6 +90,8 @@ while IFS= read -r line; do
 
 		
 
+		
+
 		#now place all array members back into one variable, inserting leading and closing brackets
 		#checking each member of array for lack of curly braces, and adding them if missing
 		pretty_new_final="["
@@ -98,13 +100,19 @@ while IFS= read -r line; do
 				pretty_new_array[$i]="{${pretty_new_array[$i]}:${pretty_new_array[$i]}}"
 			fi
 		done
+
+		#debug test for firewall rules
+		for (( i=0; i < $array_len; i++)); do
+			printf " Array member $1 : "${pretty_new_array[$i]}
+		done
+
 		pretty_new_final=$pretty_new_final${pretty_new_array[@]}
 		pretty_new_final="$pretty_new_final]"
 		pretty_new_final=$(echo "$pretty_new_final" | sed 's/} {/},{/g')
 		pretty_new_final=$(echo "$pretty_new_final" | jq -R '. as $line | try (fromjson) catch $line' )
 
 	
-
+		# now print all the data
 
 		printf "Date: $logdate \n"
 		printf "UserName: $username \n"
