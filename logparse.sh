@@ -78,6 +78,8 @@ while IFS= read -r line; do
 		# "big" changes appear to shove multiple entries into one log file. Inserting a comma between each entry so 
 		# jq can break them down and display in json format. 
 		pretty_old=$(echo "$old_value" | sed 's/}{/},{/g' )
+		#temp echo test
+		echo "$pretty_old"
 		pretty_old=$(echo "$pretty_old" | jq )
 
 		# all examples of new data have additional fields that the old data never does. Working to remove those from evaluation
@@ -89,14 +91,14 @@ while IFS= read -r line; do
 		read -ra pretty_new_array <<< "$pretty_new"
 		array_len=${#pretty_new_array[@]}
 
-		skip_last=$((array_len-1))
+		
 
 		#now place all array members back into one variable, inserting leading and closing brackets
 		#checking each member of array for lack of curly braces, and adding them if missing
 		pretty_new_final="["
 		for (( i=0; i < $array_len; i++)); do
 			if [[ "${pretty_new_array[$i]}" != "{"*"}" ]]; then
-				pretty_new_array[$i]="{${pretty_new_array[$i]}}"
+				pretty_new_array[$i]="{${pretty_new_array[$i]}:${pretty_new_array[$i]}}"
 			fi
 			#pretty_new_final="$pretty_new_final${pretty_new_array[$i]}"
 		done
@@ -107,14 +109,13 @@ while IFS= read -r line; do
 		# 	printf "Array member $i: ${pretty_new_array[$i]} \n"
 		# done
 		pretty_new_final=$(echo "$pretty_new_final" | sed 's/} {/},{/g')
-		#echo "$pretty_new_final"
-		#echo ${pretty_new_array[0]}
+		
+		
+		printf "\n"
+		echo "$pretty_new_final"
+		pretty_new_final=$(echo "$pretty_new_final" | jq -R '. as $line | try (fromjson) catch $line' )
 
-
-		#pretty_new=$(echo "$pretty_new" | jq )
-		#diff_data=$(diff <(echo "$old_value") <(echo "$new_value"))
-
-
+	
 
 
 		printf "Date: $logdate \n"
@@ -125,7 +126,7 @@ while IFS= read -r line; do
 		printf "Old Value: $old_value \n\n"
 		printf "New Value: $new_value \n\n"
 		printf "Pretty Old: $pretty_old \n\n"
-		printf "Pretty New: $pretty_new \n\n"
+		printf "Pretty New: $pretty_new_final \n\n"
 	#	printf "Diff: ${diff_data[@]} \n"
 
 
