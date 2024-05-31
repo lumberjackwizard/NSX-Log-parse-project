@@ -48,7 +48,7 @@ while IFS= read -r line; do
         newlogentry=""
 	if [[ "$line" == *"splitId"* ]]; then
 		splitid=$(echo "$line" | grep -hoE "splitId=\"\w*\"")
-		while IPS= read -r catsplitentry; do
+		while IFS= read -r catsplitentry; do
 			if [[ "$catsplitentry" == *"$splitid"* ]]; then
 				newlogentry=$catsplitentry
 			fi
@@ -88,7 +88,16 @@ while IFS= read -r line; do
 		read -ra pretty_new_array <<< "$pretty_new"
 		array_len=${#pretty_new_array[@]}
 
-		
+		# adding logic to prevent items such as firewall rules with spaces resulting in being split by the prior
+		# read action 
+
+		for (( i=0; i < $array_len; i++)); do
+			if [[ "${pretty_new_array[$i]}" == "{"* ]]; then
+				if [[ "${pretty_new_array[$i]}" != *"}" ]]; then
+				pretty_new_array[$i]="{${pretty_new_array[$i]}${pretty_new_array[$i]}}"
+				fi
+			fi
+		done
 
 		
 
