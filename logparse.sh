@@ -113,12 +113,20 @@ while IFS= read -r line; do
 
 		#now place all array members back into one variable, inserting leading and closing brackets
 		#checking each member of array for lack of curly braces, and adding them if missing
+	
 		pretty_new_final="["
-		for (( i=0; i < $array_len; i++)); do
-			if [[ "${pretty_new_array[$i]}" != "{"*"}" ]]; then
-				pretty_new_array[$i]="{${pretty_new_array[$i]}:${pretty_new_array[$i]}}"
+		for i in "${!modified_pretty_array[@]}"; do
+			if [[ "${modified_pretty_array[$i]}" != "{"*"}" ]]; then
+				modified_pretty_array[$i]="{${modified_pretty_array[$i]}:${modified_pretty_array[$i]}}"
 			fi
 		done
+	
+		# pretty_new_final="["
+		# for (( i=0; i < $array_len; i++)); do
+		# 	if [[ "${pretty_new_array[$i]}" != "{"*"}" ]]; then
+		# 		pretty_new_array[$i]="{${pretty_new_array[$i]}:${pretty_new_array[$i]}}"
+		# 	fi
+		# done
 
 		#debug test for firewall rules
 		for i in "${!modified_pretty_array[@]}"; do
@@ -126,7 +134,7 @@ while IFS= read -r line; do
 		done
 		printf "\n"
 
-		pretty_new_final=$pretty_new_final${pretty_new_array[@]}
+		pretty_new_final=$pretty_new_final${modified_pretty_array[@]}
 		pretty_new_final="$pretty_new_final]"
 		pretty_new_final=$(echo "$pretty_new_final" | sed 's/} {/},{/g')
 		pretty_new_final=$(echo "$pretty_new_final" | jq -R '. as $line | try (fromjson) catch $line' )

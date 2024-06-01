@@ -52,53 +52,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: [
-  {
-    "tier0": "tier0"
-  },
-  {
-    "labLocaleServices": "labLocaleServices"
-  },
-  {
-    "route_redistribution_config": {
-      "bgp_enabled": true,
-      "ospf_enabled": false,
-      "redistribution_rules": [
-        {
-          "name": "defaultT0redistribution",
-          "route_redistribution_types": [
-            "TIER1_LB_VIP",
-            "TIER1_LB_SNAT",
-            "TIER1_IPSEC_LOCAL_ENDPOINT",
-            "TIER1_CONNECTED"
-          ],
-          "destinations": [
-            "BGP"
-          ]
-        }
-      ]
-    },
-    "edge_cluster_path": "/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014",
-    "bfd_profile_path": "/infra/bfd-profiles/default",
-    "resource_type": "LocaleServices",
-    "id": "labLocaleServices",
-    "display_name": "labLocaleServices",
-    "path": "/infra/tier-0s/tier0/locale-services/labLocaleServices",
-    "relative_path": "labLocaleServices",
-    "parent_path": "/infra/tier-0s/tier0",
-    "unique_id": "1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31",
-    "realization_id": "1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31",
-    "owner_id": "7900f3c8-9698-4418-9c3a-0a04602e3175",
-    "marked_for_delete": false,
-    "overridden": false,
-    "_create_time": 0,
-    "_create_user": "unknown",
-    "_last_modified_time": 1715963354979,
-    "_last_modified_user": "admin",
-    "_system_owned": false,
-    "_revision": 4
-  }
-] 
+Pretty New: "["tier0""labLocaleServices"{"route_redistribution_config":{"bgp_enabled":true,"ospf_enabled":false,"redistribution_rules":[{"name":"defaultT0redistribution","route_redistribution_types":["TIER1_LB_VIP","TIER1_LB_SNAT","TIER1_IPSEC_LOCAL_ENDPOINT","TIER1_CONNECTED"],"destinations":["BGP"]}]},"edge_cluster_path":"/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014","bfd_profile_path":"/infra/bfd-profiles/default","resource_type":"LocaleServices","id":"labLocaleServices","display_name":"labLocaleServices","path":"/infra/tier-0s/tier0/locale-services/labLocaleServices","relative_path":"labLocaleServices","parent_path":"/infra/tier-0s/tier0","unique_id":"1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31","realization_id":"1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31","owner_id":"7900f3c8-9698-4418-9c3a-0a04602e3175","marked_for_delete":false,"overridden":false,"_create_time":0,"_create_user":"unknown","_last_modified_time":1715963354979,"_last_modified_user":"admin","_system_owned":false,"_revision":4}]" 
 
 
 
@@ -157,72 +111,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: [
-  {
-    "enforce_revision_check": true
-  },
-  {
-    "resource_type": "Infra",
-    "children": [
-      {
-        "children": [
-          {
-            "LocaleServices": {
-              "route_redistribution_config": {
-                "bgp_enabled": true,
-                "ospf_enabled": false,
-                "redistribution_rules": [
-                  {
-                    "name": "defaultT0redistribution",
-                    "route_redistribution_types": [
-                      "TIER1_LB_VIP",
-                      "TIER1_LB_SNAT",
-                      "TIER1_IPSEC_LOCAL_ENDPOINT",
-                      "TIER1_CONNECTED"
-                    ],
-                    "destinations": [
-                      "BGP"
-                    ]
-                  }
-                ]
-              },
-              "edge_cluster_path": "/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014",
-              "bfd_profile_path": "/infra/bfd-profiles/default",
-              "resource_type": "LocaleServices",
-              "id": "labLocaleServices",
-              "display_name": "labLocaleServices",
-              "path": "/infra/tier-0s/tier0/locale-services/labLocaleServices",
-              "relative_path": "labLocaleServices",
-              "parent_path": "/infra/tier-0s/tier0",
-              "unique_id": "1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31",
-              "realization_id": "1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31",
-              "owner_id": "7900f3c8-9698-4418-9c3a-0a04602e3175",
-              "marked_for_delete": false,
-              "overridden": false,
-              "_create_time": 0,
-              "_create_user": "unknown",
-              "_last_modified_time": 1715963354979,
-              "_last_modified_user": "admin",
-              "_system_owned": false,
-              "_revision": 4
-            },
-            "resource_type": "ChildLocaleServices",
-            "marked_for_delete": false,
-            "mark_for_override": false
-          }
-        ],
-        "target_type": "Tier0",
-        "resource_type": "ChildResourceReference",
-        "id": "tier0",
-        "marked_for_delete": false,
-        "mark_for_override": false
-      }
-    ],
-    "marked_for_delete": false,
-    "overridden": false,
-    "_revision": -1
-  }
-] 
+Pretty New: "[{"enforce_revision_check":true}{"resource_type":"Infra","children":[{"children":[{"LocaleServices":{"route_redistribution_config":{"bgp_enabled":true,"ospf_enabled":false,"redistribution_rules":[{"name":"defaultT0redistribution","route_redistribution_types":["TIER1_LB_VIP","TIER1_LB_SNAT","TIER1_IPSEC_LOCAL_ENDPOINT","TIER1_CONNECTED"],"destinations":["BGP"]}]},"edge_cluster_path":"/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014","bfd_profile_path":"/infra/bfd-profiles/default","resource_type":"LocaleServices","id":"labLocaleServices","display_name":"labLocaleServices","path":"/infra/tier-0s/tier0/locale-services/labLocaleServices","relative_path":"labLocaleServices","parent_path":"/infra/tier-0s/tier0","unique_id":"1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31","realization_id":"1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31","owner_id":"7900f3c8-9698-4418-9c3a-0a04602e3175","marked_for_delete":false,"overridden":false,"_create_time":0,"_create_user":"unknown","_last_modified_time":1715963354979,"_last_modified_user":"admin","_system_owned":false,"_revision":4},"resource_type":"ChildLocaleServices","marked_for_delete":false,"mark_for_override":false}],"target_type":"Tier0","resource_type":"ChildResourceReference","id":"tier0","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_revision":-1}]" 
 
 
 
@@ -282,54 +171,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: [
-  {
-    "tier0": "tier0"
-  },
-  {
-    "labLocaleServices": "labLocaleServices"
-  },
-  {
-    "route_redistribution_config": {
-      "bgp_enabled": true,
-      "ospf_enabled": false,
-      "redistribution_rules": [
-        {
-          "name": "defaultT0redistribution",
-          "route_redistribution_types": [
-            "TIER0_ROUTER_LINK",
-            "TIER1_LB_VIP",
-            "TIER1_LB_SNAT",
-            "TIER1_IPSEC_LOCAL_ENDPOINT",
-            "TIER1_CONNECTED"
-          ],
-          "destinations": [
-            "BGP"
-          ]
-        }
-      ]
-    },
-    "edge_cluster_path": "/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014",
-    "bfd_profile_path": "/infra/bfd-profiles/default",
-    "resource_type": "LocaleServices",
-    "id": "labLocaleServices",
-    "display_name": "labLocaleServices",
-    "path": "/infra/tier-0s/tier0/locale-services/labLocaleServices",
-    "relative_path": "labLocaleServices",
-    "parent_path": "/infra/tier-0s/tier0",
-    "unique_id": "1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31",
-    "realization_id": "1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31",
-    "owner_id": "7900f3c8-9698-4418-9c3a-0a04602e3175",
-    "marked_for_delete": false,
-    "overridden": false,
-    "_create_time": 0,
-    "_create_user": "unknown",
-    "_last_modified_time": 1716393751158,
-    "_last_modified_user": "admin",
-    "_system_owned": false,
-    "_revision": 5
-  }
-] 
+Pretty New: "["tier0""labLocaleServices"{"route_redistribution_config":{"bgp_enabled":true,"ospf_enabled":false,"redistribution_rules":[{"name":"defaultT0redistribution","route_redistribution_types":["TIER0_ROUTER_LINK","TIER1_LB_VIP","TIER1_LB_SNAT","TIER1_IPSEC_LOCAL_ENDPOINT","TIER1_CONNECTED"],"destinations":["BGP"]}]},"edge_cluster_path":"/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014","bfd_profile_path":"/infra/bfd-profiles/default","resource_type":"LocaleServices","id":"labLocaleServices","display_name":"labLocaleServices","path":"/infra/tier-0s/tier0/locale-services/labLocaleServices","relative_path":"labLocaleServices","parent_path":"/infra/tier-0s/tier0","unique_id":"1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31","realization_id":"1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31","owner_id":"7900f3c8-9698-4418-9c3a-0a04602e3175","marked_for_delete":false,"overridden":false,"_create_time":0,"_create_user":"unknown","_last_modified_time":1716393751158,"_last_modified_user":"admin","_system_owned":false,"_revision":5}]" 
 
 
 
@@ -389,73 +231,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: [
-  {
-    "enforce_revision_check": true
-  },
-  {
-    "resource_type": "Infra",
-    "children": [
-      {
-        "children": [
-          {
-            "LocaleServices": {
-              "route_redistribution_config": {
-                "bgp_enabled": true,
-                "ospf_enabled": false,
-                "redistribution_rules": [
-                  {
-                    "name": "defaultT0redistribution",
-                    "route_redistribution_types": [
-                      "TIER0_ROUTER_LINK",
-                      "TIER1_LB_VIP",
-                      "TIER1_LB_SNAT",
-                      "TIER1_IPSEC_LOCAL_ENDPOINT",
-                      "TIER1_CONNECTED"
-                    ],
-                    "destinations": [
-                      "BGP"
-                    ]
-                  }
-                ]
-              },
-              "edge_cluster_path": "/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014",
-              "bfd_profile_path": "/infra/bfd-profiles/default",
-              "resource_type": "LocaleServices",
-              "id": "labLocaleServices",
-              "display_name": "labLocaleServices",
-              "path": "/infra/tier-0s/tier0/locale-services/labLocaleServices",
-              "relative_path": "labLocaleServices",
-              "parent_path": "/infra/tier-0s/tier0",
-              "unique_id": "1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31",
-              "realization_id": "1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31",
-              "owner_id": "7900f3c8-9698-4418-9c3a-0a04602e3175",
-              "marked_for_delete": false,
-              "overridden": false,
-              "_create_time": 0,
-              "_create_user": "unknown",
-              "_last_modified_time": 1716393751158,
-              "_last_modified_user": "admin",
-              "_system_owned": false,
-              "_revision": 5
-            },
-            "resource_type": "ChildLocaleServices",
-            "marked_for_delete": false,
-            "mark_for_override": false
-          }
-        ],
-        "target_type": "Tier0",
-        "resource_type": "ChildResourceReference",
-        "id": "tier0",
-        "marked_for_delete": false,
-        "mark_for_override": false
-      }
-    ],
-    "marked_for_delete": false,
-    "overridden": false,
-    "_revision": -1
-  }
-] 
+Pretty New: "[{"enforce_revision_check":true}{"resource_type":"Infra","children":[{"children":[{"LocaleServices":{"route_redistribution_config":{"bgp_enabled":true,"ospf_enabled":false,"redistribution_rules":[{"name":"defaultT0redistribution","route_redistribution_types":["TIER0_ROUTER_LINK","TIER1_LB_VIP","TIER1_LB_SNAT","TIER1_IPSEC_LOCAL_ENDPOINT","TIER1_CONNECTED"],"destinations":["BGP"]}]},"edge_cluster_path":"/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014","bfd_profile_path":"/infra/bfd-profiles/default","resource_type":"LocaleServices","id":"labLocaleServices","display_name":"labLocaleServices","path":"/infra/tier-0s/tier0/locale-services/labLocaleServices","relative_path":"labLocaleServices","parent_path":"/infra/tier-0s/tier0","unique_id":"1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31","realization_id":"1e5fd546-ff99-4b50-a3fc-8a6f82ea0b31","owner_id":"7900f3c8-9698-4418-9c3a-0a04602e3175","marked_for_delete":false,"overridden":false,"_create_time":0,"_create_user":"unknown","_last_modified_time":1716393751158,"_last_modified_user":"admin","_system_owned":false,"_revision":5},"resource_type":"ChildLocaleServices","marked_for_delete":false,"mark_for_override":false}],"target_type":"Tier0","resource_type":"ChildResourceReference","id":"tier0","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_revision":-1}]" 
 
 
 
@@ -473,37 +249,7 @@ New Value: ["vlan-test" {"subnets":[{"gateway_address":"10.2.3.29/29"}],"vlan_id
 
 Pretty Old:  
 
-Pretty New: [
-  {
-    "vlan-test": "vlan-test"
-  },
-  {
-    "subnets": [
-      {
-        "gateway_address": "10.2.3.29/29"
-      }
-    ],
-    "vlan_ids": [
-      "2031"
-    ],
-    "transport_zone_path": "/infra/sites/default/enforcement-points/default/transport-zones/a95c914d-748d-497c-94ab-10d4647daeba",
-    "advanced_config": {
-      "hybrid": false,
-      "inter_router": false,
-      "local_egress": false,
-      "urpf_mode": "STRICT",
-      "connectivity": "ON"
-    },
-    "admin_state": "UP",
-    "replication_mode": "MTEP",
-    "resource_type": "Segment",
-    "id": "vlan-test",
-    "display_name": "vlan-test",
-    "path": "/infra/segments/vlan-test",
-    "marked_for_delete": false,
-    "overridden": false
-  }
-] 
+Pretty New: "["vlan-test"{"subnets":[{"gateway_address":"10.2.3.29/29"}],"vlan_ids":["2031"],"transport_zone_path":"/infra/sites/default/enforcement-points/default/transport-zones/a95c914d-748d-497c-94ab-10d4647daeba","advanced_config":{"hybrid":false,"inter_router":false,"local_egress":false,"urpf_mode":"STRICT","connectivity":"ON"},"admin_state":"UP","replication_mode":"MTEP","resource_type":"Segment","id":"vlan-test","display_name":"vlan-test","path":"/infra/segments/vlan-test","marked_for_delete":false,"overridden":false}]" 
 
 
 
@@ -521,50 +267,7 @@ New Value: [{"enforce_revision_check":true} {"resource_type":"Infra","children":
 
 Pretty Old:  
 
-Pretty New: [
-  {
-    "enforce_revision_check": true
-  },
-  {
-    "resource_type": "Infra",
-    "children": [
-      {
-        "Segment": {
-          "subnets": [
-            {
-              "gateway_address": "10.2.3.29/29"
-            }
-          ],
-          "vlan_ids": [
-            "2031"
-          ],
-          "transport_zone_path": "/infra/sites/default/enforcement-points/default/transport-zones/a95c914d-748d-497c-94ab-10d4647daeba",
-          "advanced_config": {
-            "hybrid": false,
-            "inter_router": false,
-            "local_egress": false,
-            "urpf_mode": "STRICT",
-            "connectivity": "ON"
-          },
-          "admin_state": "UP",
-          "replication_mode": "MTEP",
-          "resource_type": "Segment",
-          "id": "vlan-test",
-          "display_name": "vlan-test",
-          "path": "/infra/segments/vlan-test",
-          "marked_for_delete": false,
-          "overridden": false
-        },
-        "resource_type": "ChildSegment",
-        "marked_for_delete": false,
-        "mark_for_override": false
-      }
-    ],
-    "marked_for_delete": false,
-    "overridden": false,
-    "_revision": -1
-  }
-] 
+Pretty New: "[{"enforce_revision_check":true}{"resource_type":"Infra","children":[{"Segment":{"subnets":[{"gateway_address":"10.2.3.29/29"}],"vlan_ids":["2031"],"transport_zone_path":"/infra/sites/default/enforcement-points/default/transport-zones/a95c914d-748d-497c-94ab-10d4647daeba","advanced_config":{"hybrid":false,"inter_router":false,"local_egress":false,"urpf_mode":"STRICT","connectivity":"ON"},"admin_state":"UP","replication_mode":"MTEP","resource_type":"Segment","id":"vlan-test","display_name":"vlan-test","path":"/infra/segments/vlan-test","marked_for_delete":false,"overridden":false},"resource_type":"ChildSegment","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_revision":-1}]" 
 
 
 
@@ -582,33 +285,7 @@ New Value: ["static-T1" "default" "svi-test" {"segment_path":"/infra/segments/vl
 
 Pretty Old:  
 
-Pretty New: [
-  {
-    "static-T1": "static-T1"
-  },
-  {
-    "default": "default"
-  },
-  {
-    "svi-test": "svi-test"
-  },
-  {
-    "segment_path": "/infra/segments/vlan-test",
-    "urpf_mode": "STRICT",
-    "id": "svi-test",
-    "display_name": "svi-test",
-    "marked_for_delete": false,
-    "overridden": false,
-    "subnets": [
-      {
-        "ip_addresses": [
-          "10.2.3.29"
-        ],
-        "prefix_len": 29
-      }
-    ]
-  }
-] 
+Pretty New: "["static-T1""default""svi-test"{"segment_path":"/infra/segments/vlan-test","urpf_mode":"STRICT","id":"svi-test","display_name":"svi-test","marked_for_delete":false,"overridden":false,"subnets":[{"ip_addresses":["10.2.3.29"],"prefix_len":29}]}]" 
 
 
 
@@ -668,50 +345,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: [
-  {
-    "vlan-test": "vlan-test"
-  },
-  {
-    "type": "DISCONNECTED",
-    "subnets": [
-      {
-        "gateway_address": "10.2.3.29/29"
-      }
-    ],
-    "vlan_ids": [
-      "2031"
-    ],
-    "transport_zone_path": "/infra/sites/default/enforcement-points/default/transport-zones/a95c914d-748d-497c-94ab-10d4647daeba",
-    "advanced_config": {
-      "hybrid": false,
-      "multicast": true,
-      "inter_router": false,
-      "local_egress": false,
-      "urpf_mode": "STRICT",
-      "connectivity": "ON"
-    },
-    "admin_state": "UP",
-    "replication_mode": "MTEP",
-    "resource_type": "Segment",
-    "id": "vlan-test",
-    "display_name": "vlan-test-svi",
-    "path": "/infra/segments/vlan-test",
-    "relative_path": "vlan-test",
-    "parent_path": "/infra",
-    "unique_id": "bf1191fd-ab64-4592-b0eb-469d5f249e7f",
-    "realization_id": "bf1191fd-ab64-4592-b0eb-469d5f249e7f",
-    "owner_id": "7900f3c8-9698-4418-9c3a-0a04602e3175",
-    "marked_for_delete": false,
-    "overridden": false,
-    "_create_time": 1716482731123,
-    "_create_user": "admin",
-    "_last_modified_time": 1716482731123,
-    "_last_modified_user": "admin",
-    "_system_owned": false,
-    "_revision": 0
-  }
-] 
+Pretty New: "["vlan-test"{"type":"DISCONNECTED","subnets":[{"gateway_address":"10.2.3.29/29"}],"vlan_ids":["2031"],"transport_zone_path":"/infra/sites/default/enforcement-points/default/transport-zones/a95c914d-748d-497c-94ab-10d4647daeba","advanced_config":{"hybrid":false,"multicast":true,"inter_router":false,"local_egress":false,"urpf_mode":"STRICT","connectivity":"ON"},"admin_state":"UP","replication_mode":"MTEP","resource_type":"Segment","id":"vlan-test","display_name":"vlan-test-svi","path":"/infra/segments/vlan-test","relative_path":"vlan-test","parent_path":"/infra","unique_id":"bf1191fd-ab64-4592-b0eb-469d5f249e7f","realization_id":"bf1191fd-ab64-4592-b0eb-469d5f249e7f","owner_id":"7900f3c8-9698-4418-9c3a-0a04602e3175","marked_for_delete":false,"overridden":false,"_create_time":1716482731123,"_create_user":"admin","_last_modified_time":1716482731123,"_last_modified_user":"admin","_system_owned":false,"_revision":0}]" 
 
 
 
@@ -771,63 +405,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: [
-  {
-    "enforce_revision_check": true
-  },
-  {
-    "resource_type": "Infra",
-    "children": [
-      {
-        "Segment": {
-          "type": "DISCONNECTED",
-          "subnets": [
-            {
-              "gateway_address": "10.2.3.29/29"
-            }
-          ],
-          "vlan_ids": [
-            "2031"
-          ],
-          "transport_zone_path": "/infra/sites/default/enforcement-points/default/transport-zones/a95c914d-748d-497c-94ab-10d4647daeba",
-          "advanced_config": {
-            "hybrid": false,
-            "multicast": true,
-            "inter_router": false,
-            "local_egress": false,
-            "urpf_mode": "STRICT",
-            "connectivity": "ON"
-          },
-          "admin_state": "UP",
-          "replication_mode": "MTEP",
-          "resource_type": "Segment",
-          "id": "vlan-test",
-          "display_name": "vlan-test-svi",
-          "path": "/infra/segments/vlan-test",
-          "relative_path": "vlan-test",
-          "parent_path": "/infra",
-          "unique_id": "bf1191fd-ab64-4592-b0eb-469d5f249e7f",
-          "realization_id": "bf1191fd-ab64-4592-b0eb-469d5f249e7f",
-          "owner_id": "7900f3c8-9698-4418-9c3a-0a04602e3175",
-          "marked_for_delete": false,
-          "overridden": false,
-          "_create_time": 1716482731123,
-          "_create_user": "admin",
-          "_last_modified_time": 1716482731123,
-          "_last_modified_user": "admin",
-          "_system_owned": false,
-          "_revision": 0
-        },
-        "resource_type": "ChildSegment",
-        "marked_for_delete": false,
-        "mark_for_override": false
-      }
-    ],
-    "marked_for_delete": false,
-    "overridden": false,
-    "_revision": -1
-  }
-] 
+Pretty New: "[{"enforce_revision_check":true}{"resource_type":"Infra","children":[{"Segment":{"type":"DISCONNECTED","subnets":[{"gateway_address":"10.2.3.29/29"}],"vlan_ids":["2031"],"transport_zone_path":"/infra/sites/default/enforcement-points/default/transport-zones/a95c914d-748d-497c-94ab-10d4647daeba","advanced_config":{"hybrid":false,"multicast":true,"inter_router":false,"local_egress":false,"urpf_mode":"STRICT","connectivity":"ON"},"admin_state":"UP","replication_mode":"MTEP","resource_type":"Segment","id":"vlan-test","display_name":"vlan-test-svi","path":"/infra/segments/vlan-test","relative_path":"vlan-test","parent_path":"/infra","unique_id":"bf1191fd-ab64-4592-b0eb-469d5f249e7f","realization_id":"bf1191fd-ab64-4592-b0eb-469d5f249e7f","owner_id":"7900f3c8-9698-4418-9c3a-0a04602e3175","marked_for_delete":false,"overridden":false,"_create_time":1716482731123,"_create_user":"admin","_last_modified_time":1716482731123,"_last_modified_user":"admin","_system_owned":false,"_revision":0},"resource_type":"ChildSegment","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_revision":-1}]" 
 
 
 
@@ -888,80 +466,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: [
-  {
-    "static-T1": "static-T1"
-  },
-  {
-    "tier0_path": "/infra/tier-0s/tier0",
-    "failover_mode": "NON_PREEMPTIVE",
-    "enable_standby_relocation": false,
-    "route_advertisement_types": [
-      "TIER1_STATIC_ROUTES",
-      "TIER1_LB_VIP",
-      "TIER1_CONNECTED",
-      "TIER1_LB_SNAT",
-      "TIER1_IPSEC_LOCAL_ENDPOINT"
-    ],
-    "force_whitelisting": false,
-    "default_rule_logging": false,
-    "disable_firewall": false,
-    "ipv6_profile_paths": [
-      "/infra/ipv6-ndra-profiles/default",
-      "/infra/ipv6-dad-profiles/default"
-    ],
-    "pool_allocation": "ROUTING",
-    "ha_mode": "ACTIVE_STANDBY",
-    "advanced_config": {
-      "traffic_back_to_source": false,
-      "centralized_mode_enabled": false
-    },
-    "resource_type": "Tier1",
-    "id": "static-T1",
-    "display_name": "static-T1",
-    "path": "/infra/tier-1s/static-T1",
-    "relative_path": "static-T1",
-    "parent_path": "/infra",
-    "unique_id": "1ee9eb50-5e97-42e5-a66c-1b8c97782b42",
-    "realization_id": "1ee9eb50-5e97-42e5-a66c-1b8c97782b42",
-    "owner_id": "7900f3c8-9698-4418-9c3a-0a04602e3175",
-    "children": [
-      {
-        "LocaleServices": {
-          "edge_cluster_path": "/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014",
-          "resource_type": "LocaleServices",
-          "id": "default",
-          "display_name": "default",
-          "path": "/infra/tier-1s/static-T1/locale-services/default",
-          "relative_path": "default",
-          "parent_path": "/infra/tier-1s/static-T1",
-          "unique_id": "bf944a04-0770-429d-95ba-f54a9263b990",
-          "realization_id": "bf944a04-0770-429d-95ba-f54a9263b990",
-          "owner_id": "7900f3c8-9698-4418-9c3a-0a04602e3175",
-          "marked_for_delete": false,
-          "overridden": false,
-          "_create_time": 1714430611414,
-          "_create_user": "admin",
-          "_last_modified_time": 1714430611414,
-          "_last_modified_user": "admin",
-          "_system_owned": false,
-          "_revision": 0
-        },
-        "resource_type": "ChildLocaleServices",
-        "marked_for_delete": false,
-        "mark_for_override": false
-      }
-    ],
-    "marked_for_delete": false,
-    "overridden": false,
-    "_create_time": 1710521750958,
-    "_create_user": "admin",
-    "_last_modified_time": 1715868735448,
-    "_last_modified_user": "admin",
-    "_system_owned": false,
-    "_revision": 11
-  }
-] 
+Pretty New: "["static-T1"{"tier0_path":"/infra/tier-0s/tier0","failover_mode":"NON_PREEMPTIVE","enable_standby_relocation":false,"route_advertisement_types":["TIER1_STATIC_ROUTES","TIER1_LB_VIP","TIER1_CONNECTED","TIER1_LB_SNAT","TIER1_IPSEC_LOCAL_ENDPOINT"],"force_whitelisting":false,"default_rule_logging":false,"disable_firewall":false,"ipv6_profile_paths":["/infra/ipv6-ndra-profiles/default","/infra/ipv6-dad-profiles/default"],"pool_allocation":"ROUTING","ha_mode":"ACTIVE_STANDBY","advanced_config":{"traffic_back_to_source":false,"centralized_mode_enabled":false},"resource_type":"Tier1","id":"static-T1","display_name":"static-T1","path":"/infra/tier-1s/static-T1","relative_path":"static-T1","parent_path":"/infra","unique_id":"1ee9eb50-5e97-42e5-a66c-1b8c97782b42","realization_id":"1ee9eb50-5e97-42e5-a66c-1b8c97782b42","owner_id":"7900f3c8-9698-4418-9c3a-0a04602e3175","children":[{"LocaleServices":{"edge_cluster_path":"/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014","resource_type":"LocaleServices","id":"default","display_name":"default","path":"/infra/tier-1s/static-T1/locale-services/default","relative_path":"default","parent_path":"/infra/tier-1s/static-T1","unique_id":"bf944a04-0770-429d-95ba-f54a9263b990","realization_id":"bf944a04-0770-429d-95ba-f54a9263b990","owner_id":"7900f3c8-9698-4418-9c3a-0a04602e3175","marked_for_delete":false,"overridden":false,"_create_time":1714430611414,"_create_user":"admin","_last_modified_time":1714430611414,"_last_modified_user":"admin","_system_owned":false,"_revision":0},"resource_type":"ChildLocaleServices","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_create_time":1710521750958,"_create_user":"admin","_last_modified_time":1715868735448,"_last_modified_user":"admin","_system_owned":false,"_revision":11}]" 
 
 
 
@@ -1022,34 +527,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: [
-  {
-    "static-T1": "static-T1"
-  },
-  {
-    "default": "default"
-  },
-  {
-    "edge_cluster_path": "/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014",
-    "resource_type": "LocaleServices",
-    "id": "default",
-    "display_name": "default",
-    "path": "/infra/tier-1s/static-T1/locale-services/default",
-    "relative_path": "default",
-    "parent_path": "/infra/tier-1s/static-T1",
-    "unique_id": "bf944a04-0770-429d-95ba-f54a9263b990",
-    "realization_id": "bf944a04-0770-429d-95ba-f54a9263b990",
-    "owner_id": "7900f3c8-9698-4418-9c3a-0a04602e3175",
-    "marked_for_delete": false,
-    "overridden": false,
-    "_create_time": 1714430611414,
-    "_create_user": "admin",
-    "_last_modified_time": 1714430611414,
-    "_last_modified_user": "admin",
-    "_system_owned": false,
-    "_revision": 0
-  }
-] 
+Pretty New: "["static-T1""default"{"edge_cluster_path":"/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014","resource_type":"LocaleServices","id":"default","display_name":"default","path":"/infra/tier-1s/static-T1/locale-services/default","relative_path":"default","parent_path":"/infra/tier-1s/static-T1","unique_id":"bf944a04-0770-429d-95ba-f54a9263b990","realization_id":"bf944a04-0770-429d-95ba-f54a9263b990","owner_id":"7900f3c8-9698-4418-9c3a-0a04602e3175","marked_for_delete":false,"overridden":false,"_create_time":1714430611414,"_create_user":"admin","_last_modified_time":1714430611414,"_last_modified_user":"admin","_system_owned":false,"_revision":0}]" 
 
 
 
@@ -1110,93 +588,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: [
-  {
-    "enforce_revision_check": true
-  },
-  {
-    "resource_type": "Infra",
-    "children": [
-      {
-        "Tier1": {
-          "tier0_path": "/infra/tier-0s/tier0",
-          "failover_mode": "NON_PREEMPTIVE",
-          "enable_standby_relocation": false,
-          "route_advertisement_types": [
-            "TIER1_STATIC_ROUTES",
-            "TIER1_LB_VIP",
-            "TIER1_CONNECTED",
-            "TIER1_LB_SNAT",
-            "TIER1_IPSEC_LOCAL_ENDPOINT"
-          ],
-          "force_whitelisting": false,
-          "default_rule_logging": false,
-          "disable_firewall": false,
-          "ipv6_profile_paths": [
-            "/infra/ipv6-ndra-profiles/default",
-            "/infra/ipv6-dad-profiles/default"
-          ],
-          "pool_allocation": "ROUTING",
-          "ha_mode": "ACTIVE_STANDBY",
-          "advanced_config": {
-            "traffic_back_to_source": false,
-            "centralized_mode_enabled": false
-          },
-          "resource_type": "Tier1",
-          "id": "static-T1",
-          "display_name": "static-T1",
-          "path": "/infra/tier-1s/static-T1",
-          "relative_path": "static-T1",
-          "parent_path": "/infra",
-          "unique_id": "1ee9eb50-5e97-42e5-a66c-1b8c97782b42",
-          "realization_id": "1ee9eb50-5e97-42e5-a66c-1b8c97782b42",
-          "owner_id": "7900f3c8-9698-4418-9c3a-0a04602e3175",
-          "children": [
-            {
-              "LocaleServices": {
-                "edge_cluster_path": "/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014",
-                "resource_type": "LocaleServices",
-                "id": "default",
-                "display_name": "default",
-                "path": "/infra/tier-1s/static-T1/locale-services/default",
-                "relative_path": "default",
-                "parent_path": "/infra/tier-1s/static-T1",
-                "unique_id": "bf944a04-0770-429d-95ba-f54a9263b990",
-                "realization_id": "bf944a04-0770-429d-95ba-f54a9263b990",
-                "owner_id": "7900f3c8-9698-4418-9c3a-0a04602e3175",
-                "marked_for_delete": false,
-                "overridden": false,
-                "_create_time": 1714430611414,
-                "_create_user": "admin",
-                "_last_modified_time": 1714430611414,
-                "_last_modified_user": "admin",
-                "_system_owned": false,
-                "_revision": 0
-              },
-              "resource_type": "ChildLocaleServices",
-              "marked_for_delete": false,
-              "mark_for_override": false
-            }
-          ],
-          "marked_for_delete": false,
-          "overridden": false,
-          "_create_time": 1710521750958,
-          "_create_user": "admin",
-          "_last_modified_time": 1715868735448,
-          "_last_modified_user": "admin",
-          "_system_owned": false,
-          "_revision": 11
-        },
-        "resource_type": "ChildTier1",
-        "marked_for_delete": false,
-        "mark_for_override": false
-      }
-    ],
-    "marked_for_delete": false,
-    "overridden": false,
-    "_revision": -1
-  }
-] 
+Pretty New: "[{"enforce_revision_check":true}{"resource_type":"Infra","children":[{"Tier1":{"tier0_path":"/infra/tier-0s/tier0","failover_mode":"NON_PREEMPTIVE","enable_standby_relocation":false,"route_advertisement_types":["TIER1_STATIC_ROUTES","TIER1_LB_VIP","TIER1_CONNECTED","TIER1_LB_SNAT","TIER1_IPSEC_LOCAL_ENDPOINT"],"force_whitelisting":false,"default_rule_logging":false,"disable_firewall":false,"ipv6_profile_paths":["/infra/ipv6-ndra-profiles/default","/infra/ipv6-dad-profiles/default"],"pool_allocation":"ROUTING","ha_mode":"ACTIVE_STANDBY","advanced_config":{"traffic_back_to_source":false,"centralized_mode_enabled":false},"resource_type":"Tier1","id":"static-T1","display_name":"static-T1","path":"/infra/tier-1s/static-T1","relative_path":"static-T1","parent_path":"/infra","unique_id":"1ee9eb50-5e97-42e5-a66c-1b8c97782b42","realization_id":"1ee9eb50-5e97-42e5-a66c-1b8c97782b42","owner_id":"7900f3c8-9698-4418-9c3a-0a04602e3175","children":[{"LocaleServices":{"edge_cluster_path":"/infra/sites/default/enforcement-points/default/edge-clusters/f3049d2a-c939-4e1b-b06e-ba8bbf105014","resource_type":"LocaleServices","id":"default","display_name":"default","path":"/infra/tier-1s/static-T1/locale-services/default","relative_path":"default","parent_path":"/infra/tier-1s/static-T1","unique_id":"bf944a04-0770-429d-95ba-f54a9263b990","realization_id":"bf944a04-0770-429d-95ba-f54a9263b990","owner_id":"7900f3c8-9698-4418-9c3a-0a04602e3175","marked_for_delete":false,"overridden":false,"_create_time":1714430611414,"_create_user":"admin","_last_modified_time":1714430611414,"_last_modified_user":"admin","_system_owned":false,"_revision":0},"resource_type":"ChildLocaleServices","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_create_time":1710521750958,"_create_user":"admin","_last_modified_time":1715868735448,"_last_modified_user":"admin","_system_owned":false,"_revision":11},"resource_type":"ChildTier1","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_revision":-1}]" 
 
 
 
@@ -1249,58 +641,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: [
-  {
-    "tier0": "tier0"
-  },
-  {
-    "labLocaleServices": "labLocaleServices"
-  },
-  {
-    "Neighbor2": "Neighbor2"
-  },
-  {
-    "override": false
-  },
-  {
-    "neighbor_address": "172.16.70.1",
-    "remote_as_num": "200",
-    "route_filtering": [
-      {
-        "enabled": true,
-        "address_family": "IPV4"
-      }
-    ],
-    "keep_alive_time": 4,
-    "hold_down_time": 12,
-    "bfd": {
-      "enabled": true,
-      "interval": 500,
-      "multiple": 3
-    },
-    "allow_as_in": false,
-    "maximum_hop_limit": 1,
-    "password_set": false,
-    "enabled": true,
-    "resource_type": "BgpNeighborConfig",
-    "id": "Neighbor2",
-    "display_name": "Neighbor2",
-    "path": "/infra/tier-0s/tier0/locale-services/labLocaleServices/bgp/neighbors/Neighbor2",
-    "relative_path": "Neighbor2",
-    "parent_path": "/infra/tier-0s/tier0/locale-services/labLocaleServices/bgp",
-    "unique_id": "489a2935-6fbf-47fd-a16d-e898bb317e9a",
-    "realization_id": "489a2935-6fbf-47fd-a16d-e898bb317e9a",
-    "owner_id": "7900f3c8-9698-4418-9c3a-0a04602e3175",
-    "marked_for_delete": false,
-    "overridden": false,
-    "_create_time": 1715698674828,
-    "_create_user": "admin",
-    "_last_modified_time": 1715701073264,
-    "_last_modified_user": "admin",
-    "_system_owned": false,
-    "_revision": 2
-  }
-] 
+Pretty New: "["tier0""labLocaleServices""Neighbor2"{"override":false}{"neighbor_address":"172.16.70.1","remote_as_num":"200","route_filtering":[{"enabled":true,"address_family":"IPV4"}],"keep_alive_time":4,"hold_down_time":12,"bfd":{"enabled":true,"interval":500,"multiple":3},"allow_as_in":false,"maximum_hop_limit":1,"password_set":false,"enabled":true,"resource_type":"BgpNeighborConfig","id":"Neighbor2","display_name":"Neighbor2","path":"/infra/tier-0s/tier0/locale-services/labLocaleServices/bgp/neighbors/Neighbor2","relative_path":"Neighbor2","parent_path":"/infra/tier-0s/tier0/locale-services/labLocaleServices/bgp","unique_id":"489a2935-6fbf-47fd-a16d-e898bb317e9a","realization_id":"489a2935-6fbf-47fd-a16d-e898bb317e9a","owner_id":"7900f3c8-9698-4418-9c3a-0a04602e3175","marked_for_delete":false,"overridden":false,"_create_time":1715698674828,"_create_user":"admin","_last_modified_time":1715701073264,"_last_modified_user":"admin","_system_owned":false,"_revision":2}]" 
 
 
 
@@ -1353,58 +694,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: [
-  {
-    "tier0": "tier0"
-  },
-  {
-    "labLocaleServices": "labLocaleServices"
-  },
-  {
-    "Neighbor1": "Neighbor1"
-  },
-  {
-    "override": false
-  },
-  {
-    "neighbor_address": "172.16.60.1",
-    "remote_as_num": "200",
-    "route_filtering": [
-      {
-        "enabled": true,
-        "address_family": "IPV4"
-      }
-    ],
-    "keep_alive_time": 4,
-    "hold_down_time": 12,
-    "bfd": {
-      "enabled": true,
-      "interval": 500,
-      "multiple": 3
-    },
-    "allow_as_in": false,
-    "maximum_hop_limit": 1,
-    "password_set": false,
-    "enabled": true,
-    "resource_type": "BgpNeighborConfig",
-    "id": "Neighbor1",
-    "display_name": "Neighbor1",
-    "path": "/infra/tier-0s/tier0/locale-services/labLocaleServices/bgp/neighbors/Neighbor1",
-    "relative_path": "Neighbor1",
-    "parent_path": "/infra/tier-0s/tier0/locale-services/labLocaleServices/bgp",
-    "unique_id": "4bb01dd6-843b-4b30-9545-0c6d7e48336c",
-    "realization_id": "4bb01dd6-843b-4b30-9545-0c6d7e48336c",
-    "owner_id": "7900f3c8-9698-4418-9c3a-0a04602e3175",
-    "marked_for_delete": false,
-    "overridden": false,
-    "_create_time": 1715698674821,
-    "_create_user": "admin",
-    "_last_modified_time": 1715701073252,
-    "_last_modified_user": "admin",
-    "_system_owned": false,
-    "_revision": 2
-  }
-] 
+Pretty New: "["tier0""labLocaleServices""Neighbor1"{"override":false}{"neighbor_address":"172.16.60.1","remote_as_num":"200","route_filtering":[{"enabled":true,"address_family":"IPV4"}],"keep_alive_time":4,"hold_down_time":12,"bfd":{"enabled":true,"interval":500,"multiple":3},"allow_as_in":false,"maximum_hop_limit":1,"password_set":false,"enabled":true,"resource_type":"BgpNeighborConfig","id":"Neighbor1","display_name":"Neighbor1","path":"/infra/tier-0s/tier0/locale-services/labLocaleServices/bgp/neighbors/Neighbor1","relative_path":"Neighbor1","parent_path":"/infra/tier-0s/tier0/locale-services/labLocaleServices/bgp","unique_id":"4bb01dd6-843b-4b30-9545-0c6d7e48336c","realization_id":"4bb01dd6-843b-4b30-9545-0c6d7e48336c","owner_id":"7900f3c8-9698-4418-9c3a-0a04602e3175","marked_for_delete":false,"overridden":false,"_create_time":1715698674821,"_create_user":"admin","_last_modified_time":1715701073252,"_last_modified_user":"admin","_system_owned":false,"_revision":2}]" 
 
 
 
@@ -1422,7 +712,7 @@ New Value: ["default" "new-super-test" {"logging_enabled":false,"resource_type":
 
 Pretty Old:  
 
-Pretty New: "[{"default":"default"},{"new-super-test":"new-super-test"},{{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"deny:{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"deny},{ftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]}:ftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]}}]" 
+Pretty New: "["default""new-super-test"{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"deny{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]}]" 
 
 
 
@@ -1473,7 +763,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: "[{"default":"default"},{"new-super-test":"new-super-test"},{"deny_ftp":"deny_ftp"},{{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"deny:{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"deny},{ftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"}:ftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"}}]" 
+Pretty New: "[{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]}"default""new-super-test""deny_ftp"{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"}]" 
 
 
 
@@ -1524,7 +814,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: "[{"enforce_revision_check":true},{{"resource_type":"Infra","children":[{"children":[{"SecurityPolicy":{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"deny:{"resource_type":"Infra","children":[{"children":[{"SecurityPolicy":{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"deny},{ftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]},"resource_type":"ChildSecurityPolicy","marked_for_delete":false,"mark_for_override":false}],"target_type":"Domain","resource_type":"ChildResourceReference","id":"default","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_revision":-1}:ftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]},"resource_type":"ChildSecurityPolicy","marked_for_delete":false,"mark_for_override":false}],"target_type":"Domain","resource_type":"ChildResourceReference","id":"default","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_revision":-1}}]" 
+Pretty New: "[{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]}"default""new-super-test""deny_ftp"{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"}{"enforce_revision_check":true}{"resource_type":"Infra","children":[{"children":[{"SecurityPolicy":{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]},"resource_type":"ChildSecurityPolicy","marked_for_delete":false,"mark_for_override":false}],"target_type":"Domain","resource_type":"ChildResourceReference","id":"default","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_revision":-1}]" 
 
 
 
@@ -1542,69 +832,7 @@ New Value: ["default" "created_by_michael" {"logging_enabled":false,"resource_ty
 
 Pretty Old:  
 
-Pretty New: [
-  {
-    "default": "default"
-  },
-  {
-    "created_by_michael": "created_by_michael"
-  },
-  {
-    "logging_enabled": false,
-    "resource_type": "SecurityPolicy",
-    "id": "created_by_michael",
-    "display_name": "created_by_michael",
-    "path": "/infra/domains/default/security-policies/created_by_michael",
-    "children": [
-      {
-        "Rule": {
-          "action": "ALLOW",
-          "resource_type": "Rule",
-          "id": "created_by_michael_rule",
-          "display_name": "created_by_michael_rule",
-          "path": "/infra/domains/default/security-policies/created_by_michael/rules/created_by_michael_rule",
-          "marked_for_delete": false,
-          "overridden": false,
-          "sequence_number": 10,
-          "sources_excluded": false,
-          "destinations_excluded": false,
-          "source_groups": [
-            "/infra/domains/default/groups/vmgroup"
-          ],
-          "destination_groups": [
-            "/infra/domains/default/groups/vmgroup"
-          ],
-          "services": [
-            "/infra/services/test"
-          ],
-          "profiles": [
-            "ANY"
-          ],
-          "logged": false,
-          "scope": [
-            "ANY"
-          ],
-          "disabled": false,
-          "direction": "IN_OUT",
-          "ip_protocol": "IPV4_IPV6"
-        },
-        "resource_type": "ChildRule",
-        "marked_for_delete": false,
-        "mark_for_override": false
-      }
-    ],
-    "marked_for_delete": false,
-    "overridden": false,
-    "sequence_number": 1,
-    "category": "Application",
-    "stateful": true,
-    "tcp_strict": true,
-    "locked": false,
-    "scope": [
-      "ANY"
-    ]
-  }
-] 
+Pretty New: "[{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]}"default""new-super-test""deny_ftp"{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"}{"enforce_revision_check":true}{"resource_type":"Infra","children":[{"children":[{"SecurityPolicy":{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]},"resource_type":"ChildSecurityPolicy","marked_for_delete":false,"mark_for_override":false}],"target_type":"Domain","resource_type":"ChildResourceReference","id":"default","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_revision":-1}"default""created_by_michael"{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"created_by_michael","display_name":"created_by_michael","path":"/infra/domains/default/security-policies/created_by_michael","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"created_by_michael_rule","display_name":"created_by_michael_rule","path":"/infra/domains/default/security-policies/created_by_michael/rules/created_by_michael_rule","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vmgroup"],"services":["/infra/services/test"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":1,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]}]" 
 
 
 
@@ -1655,48 +883,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: [
-  {
-    "default": "default"
-  },
-  {
-    "created_by_michael": "created_by_michael"
-  },
-  {
-    "created_by_michael_rule": "created_by_michael_rule"
-  },
-  {
-    "action": "ALLOW",
-    "resource_type": "Rule",
-    "id": "created_by_michael_rule",
-    "display_name": "created_by_michael_rule",
-    "path": "/infra/domains/default/security-policies/created_by_michael/rules/created_by_michael_rule",
-    "marked_for_delete": false,
-    "overridden": false,
-    "sequence_number": 10,
-    "sources_excluded": false,
-    "destinations_excluded": false,
-    "source_groups": [
-      "/infra/domains/default/groups/vmgroup"
-    ],
-    "destination_groups": [
-      "/infra/domains/default/groups/vmgroup"
-    ],
-    "services": [
-      "/infra/services/test"
-    ],
-    "profiles": [
-      "ANY"
-    ],
-    "logged": false,
-    "scope": [
-      "ANY"
-    ],
-    "disabled": false,
-    "direction": "IN_OUT",
-    "ip_protocol": "IPV4_IPV6"
-  }
-] 
+Pretty New: "[{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]}"default""new-super-test""deny_ftp"{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"}{"enforce_revision_check":true}{"resource_type":"Infra","children":[{"children":[{"SecurityPolicy":{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]},"resource_type":"ChildSecurityPolicy","marked_for_delete":false,"mark_for_override":false}],"target_type":"Domain","resource_type":"ChildResourceReference","id":"default","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_revision":-1}"default""created_by_michael"{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"created_by_michael","display_name":"created_by_michael","path":"/infra/domains/default/security-policies/created_by_michael","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"created_by_michael_rule","display_name":"created_by_michael_rule","path":"/infra/domains/default/security-policies/created_by_michael/rules/created_by_michael_rule","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vmgroup"],"services":["/infra/services/test"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":1,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]}"default""created_by_michael""created_by_michael_rule"{"action":"ALLOW","resource_type":"Rule","id":"created_by_michael_rule","display_name":"created_by_michael_rule","path":"/infra/domains/default/security-policies/created_by_michael/rules/created_by_michael_rule","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vmgroup"],"services":["/infra/services/test"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"}]" 
 
 
 
@@ -1747,88 +934,7 @@ Pretty Old: [
   }
 ] 
 
-Pretty New: [
-  {
-    "enforce_revision_check": true
-  },
-  {
-    "resource_type": "Infra",
-    "children": [
-      {
-        "children": [
-          {
-            "SecurityPolicy": {
-              "logging_enabled": false,
-              "resource_type": "SecurityPolicy",
-              "id": "created_by_michael",
-              "display_name": "created_by_michael",
-              "path": "/infra/domains/default/security-policies/created_by_michael",
-              "children": [
-                {
-                  "Rule": {
-                    "action": "ALLOW",
-                    "resource_type": "Rule",
-                    "id": "created_by_michael_rule",
-                    "display_name": "created_by_michael_rule",
-                    "path": "/infra/domains/default/security-policies/created_by_michael/rules/created_by_michael_rule",
-                    "marked_for_delete": false,
-                    "overridden": false,
-                    "sequence_number": 10,
-                    "sources_excluded": false,
-                    "destinations_excluded": false,
-                    "source_groups": [
-                      "/infra/domains/default/groups/vmgroup"
-                    ],
-                    "destination_groups": [
-                      "/infra/domains/default/groups/vmgroup"
-                    ],
-                    "services": [
-                      "/infra/services/test"
-                    ],
-                    "profiles": [
-                      "ANY"
-                    ],
-                    "logged": false,
-                    "scope": [
-                      "ANY"
-                    ],
-                    "disabled": false,
-                    "direction": "IN_OUT",
-                    "ip_protocol": "IPV4_IPV6"
-                  },
-                  "resource_type": "ChildRule",
-                  "marked_for_delete": false,
-                  "mark_for_override": false
-                }
-              ],
-              "marked_for_delete": false,
-              "overridden": false,
-              "sequence_number": 1,
-              "category": "Application",
-              "stateful": true,
-              "tcp_strict": true,
-              "locked": false,
-              "scope": [
-                "ANY"
-              ]
-            },
-            "resource_type": "ChildSecurityPolicy",
-            "marked_for_delete": false,
-            "mark_for_override": false
-          }
-        ],
-        "target_type": "Domain",
-        "resource_type": "ChildResourceReference",
-        "id": "default",
-        "marked_for_delete": false,
-        "mark_for_override": false
-      }
-    ],
-    "marked_for_delete": false,
-    "overridden": false,
-    "_revision": -1
-  }
-] 
+Pretty New: "[{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]}"default""new-super-test""deny_ftp"{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"}{"enforce_revision_check":true}{"resource_type":"Infra","children":[{"children":[{"SecurityPolicy":{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"new-super-test","display_name":"new-super-test","path":"/infra/domains/default/security-policies/new-super-test","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"deny_ftp","display_name":"denyftp","path":"/infra/domains/default/security-policies/new-super-test/rules/deny_ftp","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vrrp_group_mw"],"services":["/infra/services/FTP"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":2,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]},"resource_type":"ChildSecurityPolicy","marked_for_delete":false,"mark_for_override":false}],"target_type":"Domain","resource_type":"ChildResourceReference","id":"default","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_revision":-1}"default""created_by_michael"{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"created_by_michael","display_name":"created_by_michael","path":"/infra/domains/default/security-policies/created_by_michael","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"created_by_michael_rule","display_name":"created_by_michael_rule","path":"/infra/domains/default/security-policies/created_by_michael/rules/created_by_michael_rule","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vmgroup"],"services":["/infra/services/test"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":1,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]}"default""created_by_michael""created_by_michael_rule"{"action":"ALLOW","resource_type":"Rule","id":"created_by_michael_rule","display_name":"created_by_michael_rule","path":"/infra/domains/default/security-policies/created_by_michael/rules/created_by_michael_rule","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vmgroup"],"services":["/infra/services/test"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"}{"enforce_revision_check":true}{"resource_type":"Infra","children":[{"children":[{"SecurityPolicy":{"logging_enabled":false,"resource_type":"SecurityPolicy","id":"created_by_michael","display_name":"created_by_michael","path":"/infra/domains/default/security-policies/created_by_michael","children":[{"Rule":{"action":"ALLOW","resource_type":"Rule","id":"created_by_michael_rule","display_name":"created_by_michael_rule","path":"/infra/domains/default/security-policies/created_by_michael/rules/created_by_michael_rule","marked_for_delete":false,"overridden":false,"sequence_number":10,"sources_excluded":false,"destinations_excluded":false,"source_groups":["/infra/domains/default/groups/vmgroup"],"destination_groups":["/infra/domains/default/groups/vmgroup"],"services":["/infra/services/test"],"profiles":["ANY"],"logged":false,"scope":["ANY"],"disabled":false,"direction":"IN_OUT","ip_protocol":"IPV4_IPV6"},"resource_type":"ChildRule","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"sequence_number":1,"category":"Application","stateful":true,"tcp_strict":true,"locked":false,"scope":["ANY"]},"resource_type":"ChildSecurityPolicy","marked_for_delete":false,"mark_for_override":false}],"target_type":"Domain","resource_type":"ChildResourceReference","id":"default","marked_for_delete":false,"mark_for_override":false}],"marked_for_delete":false,"overridden":false,"_revision":-1}]" 
 
 
 
