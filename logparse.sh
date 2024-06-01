@@ -98,7 +98,6 @@ while IFS= read -r line; do
 		match=""
 		modified_pretty_array=()
 		for i in "${pretty_new_array[@]}"; do
-			echo "Match is: $match"
 			if [[ "$match" == "" ]]; then
 				
 				if [[ "$i" != "{"* ]]; then
@@ -106,18 +105,16 @@ while IFS= read -r line; do
 					
 				elif [[ "$i" != *"}" ]]; then
 					match="$i"
-					printf "First match is: $match\n"
 				else
 					match="$i"	
 				fi
 			else
 				match="$match $i"
 			fi	
-		printf "Before loop closes, match is: $match\n"
 		done
 		#debug
 		# echo "Modifed pretty array prematch is: ${modified_pretty_array[@]}"
-		printf "After loop, match is: $match\n"
+
 
 		modified_pretty_array+=("$match")
 		
