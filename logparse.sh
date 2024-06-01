@@ -112,18 +112,13 @@ while IFS= read -r line; do
 				match="$match $i"
 			fi	
 		done
-		#debug
-		# echo "Modifed pretty array prematch is: ${modified_pretty_array[@]}"
-
-
 		modified_pretty_array+=("$match")
 		
-		#debug
-		# echo "Modifed pretty array postmatch is: ${modified_pretty_array[@]}"
+	
 
 
-		#now place all array members back into one variable, inserting leading and closing brackets
-		#checking each member of array for lack of curly braces, and adding them if missing
+		# 5. now place all array members back into one variable, inserting leading and closing brackets.
+		# Also checking each member of array for lack of curly braces, and adding them if missing
 	
 		pretty_new_final="["
 		for i in "${!modified_pretty_array[@]}"; do
@@ -131,22 +126,12 @@ while IFS= read -r line; do
 				modified_pretty_array[$i]="{${modified_pretty_array[$i]}:${modified_pretty_array[$i]}}"
 			fi
 		done
-	
-		# pretty_new_final="["
-		# for (( i=0; i < $array_len; i++)); do
-		# 	if [[ "${pretty_new_array[$i]}" != "{"*"}" ]]; then
-		# 		pretty_new_array[$i]="{${pretty_new_array[$i]}:${pretty_new_array[$i]}}"
-		# 	fi
-		# done
-
-		#debug test for firewall rules
-		# for i in "${!modified_pretty_array[@]}"; do
-		# 	printf "Array member "$i" : "${modified_pretty_array[$i]}
-		# done
-		# printf "\n"
 
 		pretty_new_final=$pretty_new_final${modified_pretty_array[@]}
 		pretty_new_final="$pretty_new_final]"
+
+		# 6. Final touch to ensure each element is separated by a comma so jq can interprete it for the 
+		# pretty output
 		pretty_new_final=$(echo "$pretty_new_final" | sed 's/} {/},{/g')
 		pretty_new_final=$(echo "$pretty_new_final" | jq -R '. as $line | try (fromjson) catch $line' )
 
@@ -160,14 +145,14 @@ while IFS= read -r line; do
 		printf "Operation Status: $operation_status \n\n"
 		printf "Old Value: $old_value \n\n"
 		printf "New Value: $new_value \n\n"
-		printf "Pretty Old: $pretty_old \n\n"
-		printf "Pretty New: $pretty_new_final \n\n"
-	#	printf "Diff: ${diff_data[@]} \n"
+		printf "Pretty Old:\n $pretty_old \n\n"
+		printf "Pretty New:\n $pretty_new_final \n\n"
+
 
 
 		printf "\n\n\n"
 
-	#	diff_data=""
+
 
 
 	fi
