@@ -95,21 +95,35 @@ while IFS= read -r line; do
 		
 		# 4. adding logic to prevent items such as firewall rules with spaces resulting in being split by the prior
 		# read action, such as when a user places spaces in a firewall rule name
+		match=""
 		modified_pretty_array=()
 		for i in "${pretty_new_array[@]}"; do
+			echo "Match is: $match"
 			if [[ "$match" == "" ]]; then
-				modified_pretty_array+="$i"
-				if [[ "$i" == "{"* ]]; then
-					if [[ "$i" != *"}" ]]; then
-						match="$i"
-					fi
+				
+				if [[ "$i" != "{"* ]]; then
+					modified_pretty_array+=("$i")
+					
+				elif [[ "$i" != *"}" ]]; then
+					match="$i"
+					printf "First match is: $match\n"
+				else
+					match="$i"	
 				fi
 			else
-				match="$match$i"
+				match="$match $i"
 			fi	
+		printf "Before loop closes, match is: $match\n"
 		done
-		modified_pretty_array+="$match"
+		#debug
+		# echo "Modifed pretty array prematch is: ${modified_pretty_array[@]}"
+		printf "After loop, match is: $match\n"
+
+		modified_pretty_array+=("$match")
 		
+		#debug
+		# echo "Modifed pretty array postmatch is: ${modified_pretty_array[@]}"
+
 
 		#now place all array members back into one variable, inserting leading and closing brackets
 		#checking each member of array for lack of curly braces, and adding them if missing
@@ -129,10 +143,10 @@ while IFS= read -r line; do
 		# done
 
 		#debug test for firewall rules
-		for i in "${!modified_pretty_array[@]}"; do
-			printf "Array member "$i" : "${modified_pretty_array[$i]}
-		done
-		printf "\n"
+		# for i in "${!modified_pretty_array[@]}"; do
+		# 	printf "Array member "$i" : "${modified_pretty_array[$i]}
+		# done
+		# printf "\n"
 
 		pretty_new_final=$pretty_new_final${modified_pretty_array[@]}
 		pretty_new_final="$pretty_new_final]"
