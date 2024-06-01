@@ -103,8 +103,8 @@ while IFS= read -r line; do
 				if [[ "$i" != "{"* ]]; then
 					modified_pretty_array+=("$i")
 					
-				elif [[ "$i" != *"}" ]]; then
-					match="$i"
+				# elif [[ "$i" != *"}" ]]; then
+				# 	match="$i"
 				else
 					match="$i"	
 				fi
