@@ -80,25 +80,35 @@ while IFS= read -r line; do
 		pretty_old=$(echo "$old_value" | sed 's/}{/},{/g' )
 		pretty_old=$(echo "$pretty_old" | jq )
 
-		# all examples of new data have additional fields that the old data never does. 
+		# all examples of new data have additional fields that the old data never does. Performing
+		# a lot of brute force work to make the new data fit constraints for jq 
 		
 
-		# stripping starting and ending brackets
+		# 1. stripping starting and ending brackets
 		pretty_new=$(echo "$new_value" | sed 's/^\[//' | sed 's/.$//')
+
+		# 2. moving $pretty_new into an array with elements split by space
 		read -ra pretty_new_array <<< "$pretty_new"
+
+		# 3. calculating array length for later use
 		array_len=${#pretty_new_array[@]}
-
-		# adding logic to prevent items such as firewall rules with spaces resulting in being split by the prior
-		# read action 
-
-		for (( i=0; i < $array_len; i++)); do
-			if [[ "${pretty_new_array[$i]}" == "{"* ]]; then
-				if [[ "${pretty_new_array[$i]}" != *"}" ]]; then
-				pretty_new_array[$i]="{${pretty_new_array[$i]}${pretty_new_array[$i]}}"
+		
+		# 4. adding logic to prevent items such as firewall rules with spaces resulting in being split by the prior
+		# read action, such as when a user places spaces in a firewall rule name
+		modified_pretty_array=()
+		for i in "${pretty_new_array[@]}"; do
+			if [[ "$match" == "" ]]; then
+				modified_pretty_array+="$i"
+				if [[ "$i" == "{"* ]]; then
+					if [[ "$i" != *"}" ]]; then
+						match="$i"
+					fi
 				fi
-			fi
+			else
+				match="$match$i"
+			fi	
 		done
-
+		modified_pretty_array+="$match"
 		
 
 		#now place all array members back into one variable, inserting leading and closing brackets
@@ -111,9 +121,10 @@ while IFS= read -r line; do
 		done
 
 		#debug test for firewall rules
-		for (( i=0; i < $array_len; i++)); do
-			printf " Array member $1 : "${pretty_new_array[$i]}
+		for i in "${!modified_pretty_array[@]}"; do
+			printf "Array member "$i" : "${modified_pretty_array[$i]}
 		done
+		printf "\n"
 
 		pretty_new_final=$pretty_new_final${pretty_new_array[@]}
 		pretty_new_final="$pretty_new_final]"
