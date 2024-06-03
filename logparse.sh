@@ -1,6 +1,9 @@
 #!/bin/bash
 
-LOGS=/Users/wrightmichae/Downloads/nsx_support_archive_20240531_210547/nsx_manager_1e071042-72dc-a451-5cd7-b3b0b8a36a5f_20240531_210548/var/log
+# Script created to show gather all change actions (Add, Create, Delete, etc) in NSX Manager audit logs. 
+# This code was developed pointing to a single NSX Manager directory. 
+
+LOGS= #enter NSX Manager audit log directory
 
 #grabs all the log entries that match the various operations listed, such as Add, Create, etc)
 change_logs=$(grep -hE "Operation=\"('Add|Create|Delete|Generate|Patch|Remove|Restore|Resync|Update')\w*\"" $LOGS/nsx-audit.log* > change_logs.txt)
